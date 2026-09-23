@@ -1,0 +1,4877 @@
+{
+  "wedding": {
+    "id": "d92db886-8fab-4561-90f3-d7e448cc0425",
+    "slug": "marina-thiago-040425",
+    "names": "Marina & Thiago",
+    "date": "2025-04-04",
+    "location": "Praia do Cumbuco — Ceará, Brasil"
+  },
+  "invitation": {
+    "mobile": "/media/invitation-mobile.webp",
+    "desktop": "/media/invitation-desktop.webp",
+    "mobileAvif": "/media/invitation-mobile.avif",
+    "desktopAvif": "/media/invitation-desktop.avif",
+    "mobileWidth": 1199,
+    "mobileHeight": 1920
+  },
+  "assets": [
+    {
+      "id": "preparacao-img-9232",
+      "src": "/media/preparacao-img-9232-1080.webp",
+      "width": 5732,
+      "height": 3821,
+      "aspectRatio": 1.5001308557969117,
+      "chapter": "preparacao",
+      "role": "opening",
+      "narrativeOrder": 1,
+      "discoveryOrder": 1,
+      "focalPoint": {
+        "x": 48,
+        "y": 48
+      },
+      "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAsABABoJYwCdACpS9KgAAD+zcnWGQgUtJoTaD49UvxFyNytpjJ8xgGspPIHwlan9puzs8iIFxA4mXnw4jQA",
+      "variants": [
+        {
+          "src": "/media/preparacao-img-9232-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 31220
+        },
+        {
+          "src": "/media/preparacao-img-9232-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 13720
+        },
+        {
+          "src": "/media/preparacao-img-9232-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 68288
+        },
+        {
+          "src": "/media/preparacao-img-9232-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 30267
+        },
+        {
+          "src": "/media/preparacao-img-9232-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 116000
+        },
+        {
+          "src": "/media/preparacao-img-9232-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 51863
+        },
+        {
+          "src": "/media/preparacao-img-9232-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 191136
+        },
+        {
+          "src": "/media/preparacao-img-9232-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 85882
+        }
+      ],
+      "alt": "Thiago ajusta o paletó claro diante de um portão de madeira.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "preparacao-img-9359",
+      "src": "/media/preparacao-img-9359-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "preparacao",
+      "role": "narrative",
+      "narrativeOrder": 2,
+      "discoveryOrder": 2,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACwAwCdASoQABgAPxFwsFAsJiSisAgBgCIJQAALPEYVB9QPVp5IgAD+w4z7noeAsr9/rcPLr9zlrlXcfYN+Upok6ug41O5P8XFMXMYC2AuT29wEF4rqzgbxLC2jYJirvNReZdbD/CyLHZni+eVSWesLFUcZvZZ5Fi/c3YkTydzRIMDxJUOa9HvpfsAAAA==",
+      "variants": [
+        {
+          "src": "/media/preparacao-img-9359-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 47540
+        },
+        {
+          "src": "/media/preparacao-img-9359-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 24271
+        },
+        {
+          "src": "/media/preparacao-img-9359-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 94710
+        },
+        {
+          "src": "/media/preparacao-img-9359-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 51385
+        },
+        {
+          "src": "/media/preparacao-img-9359-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 166872
+        },
+        {
+          "src": "/media/preparacao-img-9359-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 91136
+        },
+        {
+          "src": "/media/preparacao-img-9359-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 265248
+        },
+        {
+          "src": "/media/preparacao-img-9359-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 146201
+        }
+      ],
+      "alt": "Marina de costas, com a cauda do vestido estendida no caminho do jardim.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "preparacao-img-9460",
+      "src": "/media/preparacao-img-9460-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "preparacao",
+      "role": "detail",
+      "narrativeOrder": 3,
+      "discoveryOrder": 3,
+      "focalPoint": {
+        "x": 60,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAsABABoJZQAAq4PbIXhaHSAAP7kUwhjOdXxWuBxAbhD2eKAvhib3yATztC5tDLAHS38sUCQh/JffZ0bcmbmQAA=",
+      "variants": [
+        {
+          "src": "/media/preparacao-img-9460-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 16888
+        },
+        {
+          "src": "/media/preparacao-img-9460-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 10438
+        },
+        {
+          "src": "/media/preparacao-img-9460-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 30874
+        },
+        {
+          "src": "/media/preparacao-img-9460-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 19923
+        },
+        {
+          "src": "/media/preparacao-img-9460-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 47958
+        },
+        {
+          "src": "/media/preparacao-img-9460-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 30634
+        },
+        {
+          "src": "/media/preparacao-img-9460-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 73122
+        },
+        {
+          "src": "/media/preparacao-img-9460-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 45543
+        }
+      ],
+      "alt": "Marina sorri olhando para o buquê branco, diante da vegetação.",
+      "orientation": "landscape",
+      "cropTolerance": "low",
+      "featured": true
+    },
+    {
+      "id": "preparacao-img-9349",
+      "src": "/media/preparacao-img-9349-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "preparacao",
+      "role": "narrative",
+      "narrativeOrder": 4,
+      "discoveryOrder": 4,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADwAwCdASoQABgAPxFysFAsJqSisAgBgCIJYwDG9B6KRKCJyIb4ctfEAP63vi3q4dXBaBupsymOQI204zOxnFDN3ebew4HmyG6/Hdq9rNG/zRHzyd3cSKBiPgbdkR9XDWJnWmtcN4P84stR81lAdMgyPT9frZQg/yifIT+jTjGKI3ZOLq52/68AAAA=",
+      "variants": [
+        {
+          "src": "/media/preparacao-img-9349-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 42962
+        },
+        {
+          "src": "/media/preparacao-img-9349-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 23735
+        },
+        {
+          "src": "/media/preparacao-img-9349-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 80582
+        },
+        {
+          "src": "/media/preparacao-img-9349-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 44423
+        },
+        {
+          "src": "/media/preparacao-img-9349-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 130472
+        },
+        {
+          "src": "/media/preparacao-img-9349-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 72890
+        },
+        {
+          "src": "/media/preparacao-img-9349-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 196302
+        },
+        {
+          "src": "/media/preparacao-img-9349-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 110472
+        }
+      ],
+      "alt": "Marina abraça Thiago por trás no jardim.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "preparacao-img-9351",
+      "src": "/media/preparacao-img-9351-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "preparacao",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 5,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACQAwCdASoQABgAPxFysFAsJqSisAgBgCIJYwAASc31/Nz+VwMQAP7BgqRajnzbPlO3d26kbd9QOBNg7/HNpvMK34GcpTj1LPB0hQixbyf6dQbw9T9Jwwi7xmlIn8hEoslXTcdB9cJUQns2f2fo27KEmugv+SWZO1RkTCwAIE1Mi8vcx526z5MBcjSgAA==",
+      "variants": [
+        {
+          "src": "/media/preparacao-img-9351-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 51184
+        },
+        {
+          "src": "/media/preparacao-img-9351-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 26439
+        },
+        {
+          "src": "/media/preparacao-img-9351-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 182790
+        },
+        {
+          "src": "/media/preparacao-img-9351-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 96682
+        }
+      ],
+      "alt": "O casal junto no caminho do jardim, diante da casa.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "preparacao-img-9364",
+      "src": "/media/preparacao-img-9364-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "preparacao",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 6,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBACdASoQABgAPxFysFAsJqSisAgBgCIJQAECAG1+K0jAbnHdvsLRgdoAAP63JRnSucubi7Cm2AgVhcmyk0cwEAi6wdBMLbI7pPg+x47frufBrGRiFJl5ct44w+IlbVGkzm5JrBfN34GVLZlH+QWqPefrcXDq++ZmbkwobAas2bRM66SbPeOXQ2bHsi03j/BHOits3Pbo5QgAAAA=",
+      "variants": [
+        {
+          "src": "/media/preparacao-img-9364-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 54724
+        },
+        {
+          "src": "/media/preparacao-img-9364-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 27767
+        },
+        {
+          "src": "/media/preparacao-img-9364-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 172646
+        },
+        {
+          "src": "/media/preparacao-img-9364-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 89955
+        }
+      ],
+      "alt": "Marina e Thiago abraçados sob as palmeiras do jardim.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "preparacao-img-9517",
+      "src": "/media/preparacao-img-9517-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "narrative",
+      "narrativeOrder": 6,
+      "discoveryOrder": 1,
+      "focalPoint": {
+        "x": 53,
+        "y": 55
+      },
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACwAwCdASoQABgAPxFyslCsJqSisAgBgCIJQBdgA9Hbz1BFWzzKAAD+5M+dED97NM6OuOTb+u7HYWuH+ptBUV8H79KxCtoE+lLqGntwR9d0C3Yu6jowWBgeZXNFpFsvX7raCfKNXOtFHnTKojjiNNJhEAA=",
+      "variants": [
+        {
+          "src": "/media/preparacao-img-9517-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 11944
+        },
+        {
+          "src": "/media/preparacao-img-9517-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 8401
+        },
+        {
+          "src": "/media/preparacao-img-9517-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 24202
+        },
+        {
+          "src": "/media/preparacao-img-9517-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 16229
+        },
+        {
+          "src": "/media/preparacao-img-9517-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 55866
+        },
+        {
+          "src": "/media/preparacao-img-9517-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 36131
+        },
+        {
+          "src": "/media/preparacao-img-9517-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 136328
+        },
+        {
+          "src": "/media/preparacao-img-9517-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 82716
+        }
+      ],
+      "alt": "Marina sorri dentro do carro com o buquê nas mãos.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "preparacao-img-9568",
+      "src": "/media/preparacao-img-9568-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "comeco",
+      "role": "narrative",
+      "narrativeOrder": 7,
+      "discoveryOrder": 2,
+      "focalPoint": {
+        "x": 64,
+        "y": 48
+      },
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsABABoJZQCw7D0kAf2a0YAAOIFmJtb20igdDhmgzdqCSuncP7h+eCvVH1+B+2v0USVMIoB9S93EafdO79P3DOpWWm/0k0cSiAA",
+      "variants": [
+        {
+          "src": "/media/preparacao-img-9568-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 13286
+        },
+        {
+          "src": "/media/preparacao-img-9568-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 7468
+        },
+        {
+          "src": "/media/preparacao-img-9568-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 23524
+        },
+        {
+          "src": "/media/preparacao-img-9568-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 13760
+        },
+        {
+          "src": "/media/preparacao-img-9568-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 36662
+        },
+        {
+          "src": "/media/preparacao-img-9568-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 21697
+        },
+        {
+          "src": "/media/preparacao-img-9568-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 57372
+        },
+        {
+          "src": "/media/preparacao-img-9568-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 33525
+        }
+      ],
+      "alt": "Marina olha pela janela aberta do carro na chegada.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-9623",
+      "src": "/media/celebracao-img-9623-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "environment",
+      "narrativeOrder": 5,
+      "discoveryOrder": 3,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBACdASoQABgAPxF0slCsJqSisAgBgCIJZQAAW+yZvCbr1XN2ztXLQAD+myxr1s1qhaLo6nJc5i7EV6suZjAYmzmILJX1f1F5iWfskCaG5+up46fzA32t48UyC8LW2l+L+pMPdBrKcr/wbJFMb/wZbbBAAA==",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-9623-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 27752
+        },
+        {
+          "src": "/media/celebracao-img-9623-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 16951
+        },
+        {
+          "src": "/media/celebracao-img-9623-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 56844
+        },
+        {
+          "src": "/media/celebracao-img-9623-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 34988
+        },
+        {
+          "src": "/media/celebracao-img-9623-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 102854
+        },
+        {
+          "src": "/media/celebracao-img-9623-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 62652
+        },
+        {
+          "src": "/media/celebracao-img-9623-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 183786
+        },
+        {
+          "src": "/media/celebracao-img-9623-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 112573
+        }
+      ],
+      "alt": "A cruz de madeira e o altar diante do mar, ainda sob a luz do dia.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-9642",
+      "src": "/media/celebracao-img-9642-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 4,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABQBACdASoQABgAPxFwsFAsJiSisAgBgCIJYwAIEC54WS97u3L5j1CWBWR4AP7ha4Q6GuwdKENt47KNfAVR1UbcM2TUZ8royJ3hoLgeNUwPtsmkXrxc3wNUjhWQ+4SQ/r2NERMPWZPj+oM4db9+ckOJhttOtckR78n7xtNzUtVLVZPMc76dBH+AewDPwAAA",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-9642-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 30050
+        },
+        {
+          "src": "/media/celebracao-img-9642-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 17908
+        },
+        {
+          "src": "/media/celebracao-img-9642-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 100446
+        },
+        {
+          "src": "/media/celebracao-img-9642-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 59970
+        }
+      ],
+      "alt": "A cruz de madeira, uma palmeira e folhas verdes à beira-mar.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "celebracao-img-9732",
+      "src": "/media/celebracao-img-9732-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 5,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAACQBACdASoQABgAPxFysFAsJqSisAgBgCIJYwCw7CLaH/d4cHy2fIN+Lg4/7AAA/tlekOH/gW6zLBLIzXldpbGMCHrAC9PlKtkaytNh8+xfb5loxtZ2Xxg+7hLb+v0Z0P/nMdeaSNmbBW41CTS+wImoda6L9N+ikqrcCvuXABOU3QAA",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-9732-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 50916
+        },
+        {
+          "src": "/media/celebracao-img-9732-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 26857
+        },
+        {
+          "src": "/media/celebracao-img-9732-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 169188
+        },
+        {
+          "src": "/media/celebracao-img-9732-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 93323
+        }
+      ],
+      "alt": "Thiago caminha acompanhado de uma mulher pelo corredor da cerimônia.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "celebracao-img-9914",
+      "src": "/media/celebracao-img-9914-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "comeco",
+      "role": "environment",
+      "narrativeOrder": 8,
+      "discoveryOrder": 6,
+      "focalPoint": {
+        "x": 50,
+        "y": 60
+      },
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAsABABoJYwC7AEPC/RpLngA/u8um1rH/00y9fjhTCs0py6ft+NuLRATm6HRRgIdiWRn2962K5SVXzxU93au5ftxxhlYAG5BxAAA",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-9914-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 26412
+        },
+        {
+          "src": "/media/celebracao-img-9914-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 13122
+        },
+        {
+          "src": "/media/celebracao-img-9914-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 59620
+        },
+        {
+          "src": "/media/celebracao-img-9914-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 30954
+        },
+        {
+          "src": "/media/celebracao-img-9914-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 104592
+        },
+        {
+          "src": "/media/celebracao-img-9914-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 54320
+        },
+        {
+          "src": "/media/celebracao-img-9914-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 174398
+        },
+        {
+          "src": "/media/celebracao-img-9914-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 90996
+        }
+      ],
+      "alt": "Convidados voltados para o corredor entre bancos de madeira e palmeiras.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-9932",
+      "src": "/media/celebracao-img-9932-1080.webp",
+      "width": 3845,
+      "height": 5767,
+      "aspectRatio": 0.6667244667938269,
+      "chapter": "comeco",
+      "role": "handoff-source",
+      "narrativeOrder": 9,
+      "discoveryOrder": 7,
+      "focalPoint": {
+        "x": 50,
+        "y": 60
+      },
+      "placeholder": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACwAwCdASoQABgAPxFysFAsJqSisAgBgCIJYwAASeGfUKg4lCUskAD+48CQoqIyYsX0H6svWBE4UhIN79TOfuoqcjdXxJLA/mNcjk/RXWkng3133nldRSiKvGAlfx1O6kdxhZxOWZzJtQGX9uiZapD3TIxeYnp5ikKYWRHEEAUdJT8k+SSMY1AA",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-9932-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 58032
+        },
+        {
+          "src": "/media/celebracao-img-9932-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 28991
+        },
+        {
+          "src": "/media/celebracao-img-9932-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 123110
+        },
+        {
+          "src": "/media/celebracao-img-9932-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 62335
+        },
+        {
+          "src": "/media/celebracao-img-9932-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 224408
+        },
+        {
+          "src": "/media/celebracao-img-9932-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 112848
+        },
+        {
+          "src": "/media/celebracao-img-9932-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 385380
+        },
+        {
+          "src": "/media/celebracao-img-9932-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 188094
+        }
+      ],
+      "alt": "Marina caminha acompanhada em direção ao altar, com a cauda do vestido na areia.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-9821",
+      "src": "/media/celebracao-img-9821-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "olhares",
+      "role": "reaction",
+      "narrativeOrder": 10,
+      "discoveryOrder": 1,
+      "focalPoint": {
+        "x": 36,
+        "y": 44
+      },
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAsABABoJYgC7AED/6AD1wvnQAD+8fZC2FuysJS8gUn+S9JA+WCJNY2TS+kxZUuaUlS1WLbEn1etlKfaT3Qy3ieMIBYDFUHgvD5IAAA=",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-9821-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 12036
+        },
+        {
+          "src": "/media/celebracao-img-9821-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 7725
+        },
+        {
+          "src": "/media/celebracao-img-9821-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 20928
+        },
+        {
+          "src": "/media/celebracao-img-9821-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 14563
+        },
+        {
+          "src": "/media/celebracao-img-9821-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 33290
+        },
+        {
+          "src": "/media/celebracao-img-9821-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 22613
+        },
+        {
+          "src": "/media/celebracao-img-9821-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 52530
+        },
+        {
+          "src": "/media/celebracao-img-9821-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 34711
+        }
+      ],
+      "alt": "Thiago espera diante da cruz, com o olhar voltado para o corredor.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-gab06805",
+      "src": "/media/celebracao-gab06805-1080.webp",
+      "width": 3899,
+      "height": 5849,
+      "aspectRatio": 0.6666096768678407,
+      "chapter": "olhares",
+      "role": "recognition",
+      "narrativeOrder": 11,
+      "discoveryOrder": 2,
+      "focalPoint": {
+        "x": 48,
+        "y": 45
+      },
+      "placeholder": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAwBACdASoQABgAPxFysFAsJqSisAgBgCIJQBWA7wATzdM89lyDCSEVEgAAzjsMQq2ANWQigqiCpnNZ5d7lQMy+yY6ixOSaqfLtR498GUEnti8YMJGaGLMqvv1HpTTPr4GIt1LdeBJ0CkorK1it7L1QVuvINBNY/kucLc0nsiVX65QlFJzozdIvV4FbOxQAAAA=",
+      "variants": [
+        {
+          "src": "/media/celebracao-gab06805-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 43982
+        },
+        {
+          "src": "/media/celebracao-gab06805-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 22829
+        },
+        {
+          "src": "/media/celebracao-gab06805-768.webp",
+          "width": 768,
+          "height": 1153,
+          "format": "webp",
+          "bytes": 88386
+        },
+        {
+          "src": "/media/celebracao-gab06805-768.avif",
+          "width": 768,
+          "height": 1153,
+          "format": "avif",
+          "bytes": 46743
+        },
+        {
+          "src": "/media/celebracao-gab06805-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 156964
+        },
+        {
+          "src": "/media/celebracao-gab06805-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 83800
+        },
+        {
+          "src": "/media/celebracao-gab06805-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 288708
+        },
+        {
+          "src": "/media/celebracao-gab06805-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 143786
+        }
+      ],
+      "alt": "Marina se aproxima ao fundo enquanto Thiago aparece em primeiro plano.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-9987",
+      "src": "/media/celebracao-img-9987-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "olhares",
+      "role": "narrative",
+      "narrativeOrder": 12,
+      "discoveryOrder": 3,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABQBACdASoQABgAPxFysFAsJqSisAgBgCIJQBOgAuwhK9OU7ZxFcQfsX0CIAP7A9RmepLLZUzKLHXDbsu77MN7ukRGWNTYouOQGj2mtXSGsdvK81dMQFfd6yEZ8fGrj+lg51EH0BGi/VjX9vctNWBlrJRp3a0naL/yNB5oYBkf/GE6xIbawAwvIEMpnq4BTlhoWl500KSloAA==",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-9987-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 46540
+        },
+        {
+          "src": "/media/celebracao-img-9987-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 25248
+        },
+        {
+          "src": "/media/celebracao-img-9987-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 88150
+        },
+        {
+          "src": "/media/celebracao-img-9987-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 49707
+        },
+        {
+          "src": "/media/celebracao-img-9987-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 153572
+        },
+        {
+          "src": "/media/celebracao-img-9987-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 85787
+        },
+        {
+          "src": "/media/celebracao-img-9987-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 269918
+        },
+        {
+          "src": "/media/celebracao-img-9987-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 146395
+        }
+      ],
+      "alt": "Marina se aproxima do rosto de Thiago junto ao altar.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-9895",
+      "src": "/media/celebracao-img-9895-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "olhares",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 4,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsABABoJQBOgB07OXlbcqPgAPqeDehU19KuTVWfACYYPqPkE03ZYhi7Ng5r1hniBhXIwvjeqfafYKV1E8NtSdl+U20E7ac08TbfYQga5/P3rkAAAA==",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-9895-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 23232
+        },
+        {
+          "src": "/media/celebracao-img-9895-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 12710
+        },
+        {
+          "src": "/media/celebracao-img-9895-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 65308
+        },
+        {
+          "src": "/media/celebracao-img-9895-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 38515
+        }
+      ],
+      "alt": "Thiago com as mãos juntas e o rosto voltado para cima, sob as luzes.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "celebracao-img-9981",
+      "src": "/media/celebracao-img-9981-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "olhares",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 5,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABwAwCdASoQABgAPxFysFAsJqSisAgBgCIJQBYdgf9cpHzgt4AA/s89X1SvYm/aXNJ70e86PrM3MBsCZIKvR7olEkjY/Y6sgfmVsNEyCP1accKxaAHpNalzJxfX4B08nYOcwwIX2BZH92scdmmxZy+Ba05+49KtrT/TmQC7eMXXaUJorapiLbrQAAA=",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-9981-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 45430
+        },
+        {
+          "src": "/media/celebracao-img-9981-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 25122
+        },
+        {
+          "src": "/media/celebracao-img-9981-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 151146
+        },
+        {
+          "src": "/media/celebracao-img-9981-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 83821
+        }
+      ],
+      "alt": "Marina e Thiago sorriem lado a lado no altar.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "celebracao-img-0130",
+      "src": "/media/celebracao-img-0130-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "cerimonia",
+      "role": "environment",
+      "narrativeOrder": 13,
+      "discoveryOrder": 1,
+      "focalPoint": {
+        "x": 51,
+        "y": 52
+      },
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsABABoJaACdADQ6UMO8xAAyW7fXb3ZRyCdYlP+CymKxHB8wVinCPvHgyReBmJdlIZCdNAxxmtzS3pCgWcrlo4iSDtm4gAAAA==",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-0130-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 19646
+        },
+        {
+          "src": "/media/celebracao-img-0130-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 11492
+        },
+        {
+          "src": "/media/celebracao-img-0130-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 39330
+        },
+        {
+          "src": "/media/celebracao-img-0130-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 23736
+        },
+        {
+          "src": "/media/celebracao-img-0130-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 67566
+        },
+        {
+          "src": "/media/celebracao-img-0130-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 39914
+        },
+        {
+          "src": "/media/celebracao-img-0130-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 113822
+        },
+        {
+          "src": "/media/celebracao-img-0130-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 65142
+        }
+      ],
+      "alt": "Vista ampla da cerimônia: casal, convidados e mar azul ao entardecer.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-0169",
+      "src": "/media/celebracao-img-0169-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "cerimonia",
+      "role": "reaction",
+      "narrativeOrder": 14,
+      "discoveryOrder": 2,
+      "focalPoint": {
+        "x": 48,
+        "y": 52
+      },
+      "placeholder": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABQBACdASoQABgAPxFysFAsJqSisAgBgCIJQBOmUAnAA6y84FSCoBHdzY3QAP7kGnmvhc9vejPuEjgysGhKEc+OxKg0CXu4UswvJEcx6e8oeAr2Rop++IVH/wBM/SR1V6yHgU7KMdB3ho2wVaozvqdy1vlX1Xf3oIztB+k7Nzig3oy7K+eOCJZUZLtUYkSbfB0NfQ7AAAA=",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-0169-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 32180
+        },
+        {
+          "src": "/media/celebracao-img-0169-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 19237
+        },
+        {
+          "src": "/media/celebracao-img-0169-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 59952
+        },
+        {
+          "src": "/media/celebracao-img-0169-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 37244
+        },
+        {
+          "src": "/media/celebracao-img-0169-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 116014
+        },
+        {
+          "src": "/media/celebracao-img-0169-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 68438
+        },
+        {
+          "src": "/media/celebracao-img-0169-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 234160
+        },
+        {
+          "src": "/media/celebracao-img-0169-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 126058
+        }
+      ],
+      "alt": "Marina apoia a cabeça no ombro de Thiago durante a cerimônia.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-0182",
+      "src": "/media/celebracao-img-0182-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "cerimonia",
+      "role": "narrative",
+      "narrativeOrder": 15,
+      "discoveryOrder": 3,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABwBACdASoQABgAPxFysFAsJqSisAgBgCIJagCdMoMYAEmmzqP8HjXDjv3AwAD+2oTPtyiJKeijJFWJNfCizNu4r+iFlRolIlmHof39CkC3hwYU4u/qCsLKn5Hg1b04tCJHZdg5VjIJuK9GjKdmVECpUvBdgvBY2tSaez+KAzCBQ8IuAAA=",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-0182-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 20430
+        },
+        {
+          "src": "/media/celebracao-img-0182-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 14326
+        },
+        {
+          "src": "/media/celebracao-img-0182-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 40308
+        },
+        {
+          "src": "/media/celebracao-img-0182-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 27188
+        },
+        {
+          "src": "/media/celebracao-img-0182-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 86562
+        },
+        {
+          "src": "/media/celebracao-img-0182-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 53750
+        },
+        {
+          "src": "/media/celebracao-img-0182-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 185838
+        },
+        {
+          "src": "/media/celebracao-img-0182-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 107275
+        }
+      ],
+      "alt": "O casal de costas diante do celebrante, sob as luzes e o céu azul profundo.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-gab07176",
+      "src": "/media/celebracao-gab07176-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "cerimonia",
+      "role": "detail",
+      "narrativeOrder": 16,
+      "discoveryOrder": 4,
+      "focalPoint": {
+        "x": 50,
+        "y": 52
+      },
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAsABABoJaQAAqoYo+TImAD+8bRHEb+T1LzNS2SEp/6pRYngrP0zYiJ9hyYQTn93ShW0TgzVYaT0SAEvXI/4NexQYkBROPTvjtX12piht9v4RgAAAA==",
+      "variants": [
+        {
+          "src": "/media/celebracao-gab07176-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 12396
+        },
+        {
+          "src": "/media/celebracao-gab07176-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 7690
+        },
+        {
+          "src": "/media/celebracao-gab07176-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 27932
+        },
+        {
+          "src": "/media/celebracao-gab07176-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 15827
+        },
+        {
+          "src": "/media/celebracao-gab07176-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 61020
+        },
+        {
+          "src": "/media/celebracao-gab07176-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 29824
+        },
+        {
+          "src": "/media/celebracao-gab07176-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 150104
+        },
+        {
+          "src": "/media/celebracao-gab07176-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 59571
+        }
+      ],
+      "alt": "Fotografia em preto e branco das mãos do casal segurando taças.",
+      "orientation": "landscape",
+      "cropTolerance": "low",
+      "featured": true
+    },
+    {
+      "id": "celebracao-56",
+      "src": "/media/celebracao-56-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "cerimonia",
+      "role": "ritual",
+      "narrativeOrder": 17,
+      "discoveryOrder": 5,
+      "focalPoint": {
+        "x": 50,
+        "y": 46
+      },
+      "placeholder": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoQABgAPxFysFAsJqSisAgBgCIJYgCdMoGv/gNNuJn9COASzVkOegAA/ukd8Q7bPM2IXO3z40GEl7nSvzxblVK9RL02p/HBoMnGSosgQcYaMxFH1ZApoxq7BKsf4S97p/f0iS+1XjN0eWQVw4BMUHI9l0mk3p5P2I1dvfRBc0QC4ZDFbHKrknNRDKRmQNmcQIAAAA==",
+      "variants": [
+        {
+          "src": "/media/celebracao-56-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 34132
+        },
+        {
+          "src": "/media/celebracao-56-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 19898
+        },
+        {
+          "src": "/media/celebracao-56-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 64076
+        },
+        {
+          "src": "/media/celebracao-56-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 37598
+        },
+        {
+          "src": "/media/celebracao-56-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 125820
+        },
+        {
+          "src": "/media/celebracao-56-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 69447
+        },
+        {
+          "src": "/media/celebracao-56-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 252096
+        },
+        {
+          "src": "/media/celebracao-56-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 129914
+        }
+      ],
+      "alt": "Marina e Thiago seguram taças ao lado da mesa do altar.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-0525",
+      "src": "/media/celebracao-img-0525-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "cerimonia",
+      "role": "detail",
+      "narrativeOrder": 18,
+      "discoveryOrder": 6,
+      "focalPoint": {
+        "x": 52,
+        "y": 55
+      },
+      "placeholder": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAwBACdASoQABgAPxFysFAsJqSisAgBgCIJZgCdIMgDb4iu0jRdZ16ZGNAA/Y5pe+Mxpt0K4lfvJrlTeBakIvj0CITeGwIoShEsQGXnWeDgFTs9CjzSOa7b+b9g74tu0PR/s+htCb/xSn5TiQem/0sG/Q6SwBW9SzRjiUfBxiQjyNKRdzHi1TChganXIoIAAAA=",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-0525-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 14388
+        },
+        {
+          "src": "/media/celebracao-img-0525-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 9669
+        },
+        {
+          "src": "/media/celebracao-img-0525-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 32816
+        },
+        {
+          "src": "/media/celebracao-img-0525-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 20516
+        },
+        {
+          "src": "/media/celebracao-img-0525-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 90918
+        },
+        {
+          "src": "/media/celebracao-img-0525-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 48777
+        },
+        {
+          "src": "/media/celebracao-img-0525-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 220996
+        },
+        {
+          "src": "/media/celebracao-img-0525-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 111711
+        }
+      ],
+      "alt": "Duas alianças douradas repousam em uma concha na palma de uma mão.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-0534",
+      "src": "/media/celebracao-img-0534-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "cerimonia",
+      "role": "narrative",
+      "narrativeOrder": 19,
+      "discoveryOrder": 7,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADwAwCdASoQABgAPxFysFAsJqSisAgBgCIJYwAIEAPXXNeyrkJ3sPGQAP7r8+nmZCr/MpP4G+2lptHRqWbVMsCYYe+BZykMXDIifvR8VGKfEJP67Goh/qQcwwcMr84LpK78Kv7EQx6oHMk1oD5lzMQoaaZILl0WdWasvnlz3UZIM1B63bd4uALNdlilQAAA",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-0534-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 33224
+        },
+        {
+          "src": "/media/celebracao-img-0534-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 18880
+        },
+        {
+          "src": "/media/celebracao-img-0534-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 64814
+        },
+        {
+          "src": "/media/celebracao-img-0534-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 38586
+        },
+        {
+          "src": "/media/celebracao-img-0534-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 130290
+        },
+        {
+          "src": "/media/celebracao-img-0534-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 72606
+        },
+        {
+          "src": "/media/celebracao-img-0534-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 259348
+        },
+        {
+          "src": "/media/celebracao-img-0534-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 134906
+        }
+      ],
+      "alt": "Plano aberto do casal durante a troca de alianças à noite.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "celebracao-img-0537",
+      "src": "/media/celebracao-img-0537-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "cerimonia",
+      "role": "ritual",
+      "narrativeOrder": 20,
+      "discoveryOrder": 8,
+      "focalPoint": {
+        "x": 50,
+        "y": 54
+      },
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoQABgAPxFysFAsJqSisAgBgCIJYwC7AB4gcO10oGhZzCuh4yAA/uj4Ph+60lMDuu7YzwfD1YoI3iAroBHouiShOyLJQB2TvIK+rGzyxTzFiSitX9/ezKH7ozUwRaF/9Jhn7nPMGvmHtBzyXHZkrWROMrjjvWacH8lKRzgYGC40J4SAAAA=",
+      "variants": [
+        {
+          "src": "/media/celebracao-img-0537-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 31664
+        },
+        {
+          "src": "/media/celebracao-img-0537-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 18634
+        },
+        {
+          "src": "/media/celebracao-img-0537-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 63038
+        },
+        {
+          "src": "/media/celebracao-img-0537-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 37221
+        },
+        {
+          "src": "/media/celebracao-img-0537-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 126136
+        },
+        {
+          "src": "/media/celebracao-img-0537-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 69933
+        },
+        {
+          "src": "/media/celebracao-img-0537-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 254564
+        },
+        {
+          "src": "/media/celebracao-img-0537-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 131009
+        }
+      ],
+      "alt": "Marina e Thiago trocam alianças diante da cruz iluminada.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "beijo-img-0590",
+      "src": "/media/beijo-img-0590-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "sim",
+      "role": "climax",
+      "narrativeOrder": 21,
+      "discoveryOrder": 1,
+      "focalPoint": {
+        "x": 51,
+        "y": 59
+      },
+      "placeholder": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBACdASoQABgAPxFysFCsJqSisAgBgCIJYwC7AywBtGU6pyspUCBogHAA/ujieNTzZpWJNkPb7T8MD9bc3CDda8JXD3gQ3QEGcvtHXBKLZDpEjIZyYKl9TQtmlBnm4ho/2PDzs3W6Vrh377XbzNh24QRotpTvMydxHvopJZzTZAAA",
+      "variants": [
+        {
+          "src": "/media/beijo-img-0590-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 25010
+        },
+        {
+          "src": "/media/beijo-img-0590-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 16305
+        },
+        {
+          "src": "/media/beijo-img-0590-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 49434
+        },
+        {
+          "src": "/media/beijo-img-0590-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 32029
+        },
+        {
+          "src": "/media/beijo-img-0590-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 99076
+        },
+        {
+          "src": "/media/beijo-img-0590-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 59863
+        },
+        {
+          "src": "/media/beijo-img-0590-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 207974
+        },
+        {
+          "src": "/media/beijo-img-0590-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 113305
+        }
+      ],
+      "alt": "Thiago inclina Marina em um beijo diante do altar e das luzes.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "beijo-img-0636",
+      "src": "/media/beijo-img-0636-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "sim",
+      "role": "climax",
+      "narrativeOrder": 22,
+      "discoveryOrder": 2,
+      "focalPoint": {
+        "x": 51,
+        "y": 56
+      },
+      "placeholder": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAQBACdASoQABgAPxFysFAsJqSisAgBgCIJQBWABDwIOokvpL6kfJZ4AAD+6+QS9jz1Q4sLihBfPmbBnQM98DTk6BIfjSizjqJVk23wcJqqeCRMHvPtSlEL4x6i/XjSBakxqCBm4JhJIzqTOnArRAKhWPwgM8vXof2C4Q5H5r5wcc6j1ZRQwM8FWXbdIZlWrpT6fyAMSgA=",
+      "variants": [
+        {
+          "src": "/media/beijo-img-0636-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 38254
+        },
+        {
+          "src": "/media/beijo-img-0636-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 21973
+        },
+        {
+          "src": "/media/beijo-img-0636-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 72786
+        },
+        {
+          "src": "/media/beijo-img-0636-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 42393
+        },
+        {
+          "src": "/media/beijo-img-0636-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 130556
+        },
+        {
+          "src": "/media/beijo-img-0636-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 74177
+        },
+        {
+          "src": "/media/beijo-img-0636-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 247232
+        },
+        {
+          "src": "/media/beijo-img-0636-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 130620
+        }
+      ],
+      "alt": "O casal se beija entre os convidados; Marina ergue o buquê branco.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "saida-113",
+      "src": "/media/saida-113-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 1,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBACdASoQABgAPxFysFAsJqSisAgBgCIJQBOgA8TRqTBSGi8pW64VO4AA/ttp6Cz5kWUtYygabF9MOIo+Rd4aTJlXY/TrvaOpx13657oSXx8oXI4DA6d/LdTWmUADL+3IDf5BT3Ou4Rndoea6Z8wN1Jmxoi58MrCR5XyetwRlAAAA",
+      "variants": [
+        {
+          "src": "/media/saida-113-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 49098
+        },
+        {
+          "src": "/media/saida-113-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 26774
+        },
+        {
+          "src": "/media/saida-113-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 169162
+        },
+        {
+          "src": "/media/saida-113-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 90044
+        }
+      ],
+      "alt": "Marina e Thiago caminham entre convidados sob uma chuva de pétalas.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "saida-img-0677",
+      "src": "/media/saida-img-0677-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "release",
+      "narrativeOrder": 23,
+      "discoveryOrder": 2,
+      "focalPoint": {
+        "x": 49,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADQAwCdASoQABgAPxFwsFAsJiSisAgBgCIJQBOgA9E9eOGgVtb8bMAA/tqOR7T7ZkW3u5aeYEd2XSgxRrXHU4Of3zeXr6QDbaTJBEO2KnUXYgx9KOttBg9W30Ei8lKPWgYKIXngLpV4FSGO/oWkkAR7WQzWnmC0yEZN8wdJAbUiDxVAqAA=",
+      "variants": [
+        {
+          "src": "/media/saida-img-0677-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 42220
+        },
+        {
+          "src": "/media/saida-img-0677-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 23757
+        },
+        {
+          "src": "/media/saida-img-0677-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 77762
+        },
+        {
+          "src": "/media/saida-img-0677-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 46471
+        },
+        {
+          "src": "/media/saida-img-0677-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 139912
+        },
+        {
+          "src": "/media/saida-img-0677-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 80326
+        },
+        {
+          "src": "/media/saida-img-0677-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 246954
+        },
+        {
+          "src": "/media/saida-img-0677-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 137475
+        }
+      ],
+      "alt": "Marina ergue o buquê enquanto o casal atravessa as pétalas e os convidados.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "saida-img-0684",
+      "src": "/media/saida-img-0684-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "release",
+      "narrativeOrder": 24,
+      "discoveryOrder": 3,
+      "focalPoint": {
+        "x": 51,
+        "y": 54
+      },
+      "placeholder": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAQBACdASoQABgAPxFwsFAsJiSisAgBgCIJQBYd5YMMALo5GzldN2CoAAD+2ojUZomBj/vlWi85Q3H681mLN+tq24odJX/GBtCHo/PpWUaE82I/hDJy5dAlO3Ws3pY1F34m2/MZuK0itnAUmI/tOI7N3054uFpIG7hxN5MX9uZ9J1zYtMKGYTY9Eo/YESsAeeUE0T/vcvdgAA==",
+      "variants": [
+        {
+          "src": "/media/saida-img-0684-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 32264
+        },
+        {
+          "src": "/media/saida-img-0684-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 20079
+        },
+        {
+          "src": "/media/saida-img-0684-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 58328
+        },
+        {
+          "src": "/media/saida-img-0684-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 37868
+        },
+        {
+          "src": "/media/saida-img-0684-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 106176
+        },
+        {
+          "src": "/media/saida-img-0684-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 65318
+        },
+        {
+          "src": "/media/saida-img-0684-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 194854
+        },
+        {
+          "src": "/media/saida-img-0684-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 115027
+        }
+      ],
+      "alt": "O casal ri no corredor enquanto pétalas atravessam a fotografia.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "festa-183",
+      "src": "/media/festa-183-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "party-hero",
+      "narrativeOrder": 26,
+      "discoveryOrder": 4,
+      "focalPoint": {
+        "x": 48,
+        "y": 52
+      },
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsABABoJZQCdAED/vbLySVAAP70O30DBFkP4XU0t9NdPYuRzjd3GdjrQtRXgEozsWT1IctqbK8Lr7Op9YnAhD63Zz1KhG+voatelfrWBVCUTAAAAA==",
+      "variants": [
+        {
+          "src": "/media/festa-183-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 19940
+        },
+        {
+          "src": "/media/festa-183-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 11005
+        },
+        {
+          "src": "/media/festa-183-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 37268
+        },
+        {
+          "src": "/media/festa-183-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 22284
+        },
+        {
+          "src": "/media/festa-183-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 57144
+        },
+        {
+          "src": "/media/festa-183-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 35344
+        },
+        {
+          "src": "/media/festa-183-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 86132
+        },
+        {
+          "src": "/media/festa-183-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 53443
+        }
+      ],
+      "alt": "O casal se beija no centro de um brinde coletivo com taças erguidas.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "festa-186",
+      "src": "/media/festa-186-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "narrative",
+      "narrativeOrder": 27,
+      "discoveryOrder": 5,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABQBACdASoQABgAPxFysFAsJqSisAgBgCIJZQAD5IH3+h9uS8rja2A+gDVgAP7r/4KjH4Ty4WJwKrxfEPB6i8HPfX1z6Q2MlWK6lPmniKUfMXi2ILV1b1IWZ0lPFizIlUQ52BUYf71zCCnAZ3m1Y2PnD/jUoADrL7iJZ46SO2CXsVq2d86bYMNqP3Byzrfd06SRwmJhfJDfuV+YElgAAA==",
+      "variants": [
+        {
+          "src": "/media/festa-186-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 22768
+        },
+        {
+          "src": "/media/festa-186-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 14010
+        },
+        {
+          "src": "/media/festa-186-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 40502
+        },
+        {
+          "src": "/media/festa-186-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 24550
+        },
+        {
+          "src": "/media/festa-186-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 72416
+        },
+        {
+          "src": "/media/festa-186-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 42618
+        },
+        {
+          "src": "/media/festa-186-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 131404
+        },
+        {
+          "src": "/media/festa-186-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 78321
+        }
+      ],
+      "alt": "Braços e taças se encontram em um brinde ao redor do casal.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "festa-187",
+      "src": "/media/festa-187-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 6,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABwBACdASoQABgAPxFysFAsJqSisAgBgCIJYwAu/8uwRfgv9+Pdf6geEYTsuAD+6+hNmueG03KkbchvuQi0V7EcwO7D3Tad3gmehYvoUQ+JquF5RogNaQStQPUZ+PhgU7yqHAz6KNDkE0mDOj7hNI9t+AXZA1WdMZZdF4EuGoVSQDUL5fJZYI2iSMpWJFdBMAAAAA==",
+      "variants": [
+        {
+          "src": "/media/festa-187-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 27648
+        },
+        {
+          "src": "/media/festa-187-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 16526
+        },
+        {
+          "src": "/media/festa-187-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 89446
+        },
+        {
+          "src": "/media/festa-187-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 53946
+        }
+      ],
+      "alt": "Marina e Thiago brindam olhando um para o outro.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "festa-188",
+      "src": "/media/festa-188-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 7,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBACdASoQABgAPxFysFAsJqSisAgBgCIJQAALjKJWXpKQKSdERuccV7AA/uvhSp5XQFovLOHLBC01yjSiLfvGgCkApzQuClKPoIhNUrYH/RMVMO/XjBiqt7D3wz8NXSGzEw9pMz69KB4o2OYjR7ot1XYVff/N7tHRzTVi4B7MO1j/1yH09WRBBHHRfkILv9AAAA==",
+      "variants": [
+        {
+          "src": "/media/festa-188-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 26108
+        },
+        {
+          "src": "/media/festa-188-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 15920
+        },
+        {
+          "src": "/media/festa-188-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 86326
+        },
+        {
+          "src": "/media/festa-188-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 51849
+        }
+      ],
+      "alt": "Marina e Thiago tomam suas bebidas durante o brinde.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "festa-189",
+      "src": "/media/festa-189-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "narrative",
+      "narrativeOrder": 28,
+      "discoveryOrder": 8,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASoQABgAPxFysFAsJqSisAgBgCIJZQAAXBuhLwSrRzA9o0E06AD+7ofJ4nFde3iKnQofc54qjg1YoEFkn+ViIIAAMrG/FtTUzHrxfvWCK8tnFWFuOeMJBM5pLf0+uLxtfPZvJU+z5tPs/vSyuaxB0a/K3keyLTOYSwRgGgAA",
+      "variants": [
+        {
+          "src": "/media/festa-189-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 22422
+        },
+        {
+          "src": "/media/festa-189-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 14328
+        },
+        {
+          "src": "/media/festa-189-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 41232
+        },
+        {
+          "src": "/media/festa-189-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 26282
+        },
+        {
+          "src": "/media/festa-189-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 75314
+        },
+        {
+          "src": "/media/festa-189-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 46152
+        },
+        {
+          "src": "/media/festa-189-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 137342
+        },
+        {
+          "src": "/media/festa-189-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 83732
+        }
+      ],
+      "alt": "Marina sorri abraçada a Thiago durante a festa.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "festa-img-1497",
+      "src": "/media/festa-img-1497-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "narrative",
+      "narrativeOrder": 29,
+      "discoveryOrder": 9,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAsABABoJYwCdAEUhB15QiQA/vLob3vcNNHqfHaREVp3beSO9FJGcZJBxGk31Sv7EegGH31q40WRrTyL9s8c6TIPsGRSKDAN+hnhXAAAAA==",
+      "variants": [
+        {
+          "src": "/media/festa-img-1497-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 17228
+        },
+        {
+          "src": "/media/festa-img-1497-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 10082
+        },
+        {
+          "src": "/media/festa-img-1497-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 34674
+        },
+        {
+          "src": "/media/festa-img-1497-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 20745
+        },
+        {
+          "src": "/media/festa-img-1497-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 54294
+        },
+        {
+          "src": "/media/festa-img-1497-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 33249
+        },
+        {
+          "src": "/media/festa-img-1497-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 83710
+        },
+        {
+          "src": "/media/festa-img-1497-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 51338
+        }
+      ],
+      "alt": "Casal e convidados riem juntos ao redor de uma mesa.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "festa-img-1507",
+      "src": "/media/festa-img-1507-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "narrative",
+      "narrativeOrder": 30,
+      "discoveryOrder": 10,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsABABoJQBOgCFKnP563+AA/vWDd6YCuV2szy55ILCbhMln/957tV+9RAtAJ9XzFpjuiM3nUsKqYEu4jxvl6wv3PuVfLalatqzam/4Ho8AA",
+      "variants": [
+        {
+          "src": "/media/festa-img-1507-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 14836
+        },
+        {
+          "src": "/media/festa-img-1507-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 8712
+        },
+        {
+          "src": "/media/festa-img-1507-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 28856
+        },
+        {
+          "src": "/media/festa-img-1507-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 17434
+        },
+        {
+          "src": "/media/festa-img-1507-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 44900
+        },
+        {
+          "src": "/media/festa-img-1507-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 28271
+        },
+        {
+          "src": "/media/festa-img-1507-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 71112
+        },
+        {
+          "src": "/media/festa-img-1507-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 43365
+        }
+      ],
+      "alt": "Marina e Thiago posam com convidados atrás de uma mesa decorada.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "festa-img-1514",
+      "src": "/media/festa-img-1514-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 11,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAsABABoJZACdACvTh7uAAD+9dbto5T5yBXqcq5phbGBBOGw1pa/09aUR3i/XmwINqBMCMw7b77xmrRBMpBecb0U4q9tpuJE3Bd48EBIeEtAAAA=",
+      "variants": [
+        {
+          "src": "/media/festa-img-1514-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 16444
+        },
+        {
+          "src": "/media/festa-img-1514-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 9525
+        },
+        {
+          "src": "/media/festa-img-1514-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 50158
+        },
+        {
+          "src": "/media/festa-img-1514-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 31405
+        }
+      ],
+      "alt": "Um grupo de convidados se reúne com o casal à noite.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "festa-img-1519",
+      "src": "/media/festa-img-1519-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "narrative",
+      "narrativeOrder": 31,
+      "discoveryOrder": 12,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoQAAsABABoJQBdgMYJ7driUHFpQAD+8uPqWsjxhRRLCz7mO7phJupW1pYg8f182GO0nxmRZVSq6/WXJwhWfIR20Qort8hgF6pvu1OE+v4LU8UDakAAAA==",
+      "variants": [
+        {
+          "src": "/media/festa-img-1519-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 18066
+        },
+        {
+          "src": "/media/festa-img-1519-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 10510
+        },
+        {
+          "src": "/media/festa-img-1519-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 35220
+        },
+        {
+          "src": "/media/festa-img-1519-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 21626
+        },
+        {
+          "src": "/media/festa-img-1519-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 56414
+        },
+        {
+          "src": "/media/festa-img-1519-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 35292
+        },
+        {
+          "src": "/media/festa-img-1519-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 88972
+        },
+        {
+          "src": "/media/festa-img-1519-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 55594
+        }
+      ],
+      "alt": "Convidados e casal celebram juntos com braços erguidos.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "festa-img-1524",
+      "src": "/media/festa-img-1524-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "narrative",
+      "narrativeOrder": 32,
+      "discoveryOrder": 13,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACQAQCdASoQAAsABABoJaACdABU2cAA/uzhzNzm0K3gyvTs3HWdc88v8Io62enNw/+kKrKbZKyFaommE9EQ8G1fL1jqHrh30ZAXBBVugDvklQee/AdbjOIjsPLkKN/kt8gAAA==",
+      "variants": [
+        {
+          "src": "/media/festa-img-1524-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 16356
+        },
+        {
+          "src": "/media/festa-img-1524-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 9538
+        },
+        {
+          "src": "/media/festa-img-1524-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 32700
+        },
+        {
+          "src": "/media/festa-img-1524-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 19016
+        },
+        {
+          "src": "/media/festa-img-1524-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 52080
+        },
+        {
+          "src": "/media/festa-img-1524-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 31437
+        },
+        {
+          "src": "/media/festa-img-1524-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 85484
+        },
+        {
+          "src": "/media/festa-img-1524-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 50550
+        }
+      ],
+      "alt": "Convidadas fazem gestos descontraídos ao redor do casal.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "festa-img-1533",
+      "src": "/media/festa-img-1533-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 14,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAsABABoJYwCsAEPEQBaa4t/AAD+8zBMLJQ0IXJDCnkAr9sJtdPjFH6AxK9kIT82cnSK2z140E6Rn+PuVdSTFWvw9kGZYdlPlAAA",
+      "variants": [
+        {
+          "src": "/media/festa-img-1533-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 24464
+        },
+        {
+          "src": "/media/festa-img-1533-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 12800
+        },
+        {
+          "src": "/media/festa-img-1533-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 84322
+        },
+        {
+          "src": "/media/festa-img-1533-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 45271
+        }
+      ],
+      "alt": "Um grande grupo se reúne ao redor de uma mesa com Marina e Thiago.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "festa-img-1543",
+      "src": "/media/festa-img-1543-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 15,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsABABoJYwC7AEP+bXiZb6AAP71fE8WIGsoyd2MlvYPIqpcW5iagsWmuZQhqW2cexAeSfQSbhPltFgY+995At5COrY1tY+FXgMxAAA=",
+      "variants": [
+        {
+          "src": "/media/festa-img-1543-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 24096
+        },
+        {
+          "src": "/media/festa-img-1543-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 12845
+        },
+        {
+          "src": "/media/festa-img-1543-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 78404
+        },
+        {
+          "src": "/media/festa-img-1543-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 44675
+        }
+      ],
+      "alt": "Casal e convidados sorriem sob o cordão de luzes.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "festa-img-1549",
+      "src": "/media/festa-img-1549-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "action",
+      "narrativeOrder": 33,
+      "discoveryOrder": 16,
+      "focalPoint": {
+        "x": 51,
+        "y": 47
+      },
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsABABoJYwC7ADPl7yF9ESwAP71e9G/5EJTBiOfxE1Gq1d7MhK0YWsOIqoCri+c6oYTnvDQ2rUOySUO95zOZH/vHdbo/TwAAA==",
+      "variants": [
+        {
+          "src": "/media/festa-img-1549-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 17272
+        },
+        {
+          "src": "/media/festa-img-1549-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 10463
+        },
+        {
+          "src": "/media/festa-img-1549-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 33542
+        },
+        {
+          "src": "/media/festa-img-1549-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 20881
+        },
+        {
+          "src": "/media/festa-img-1549-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 52410
+        },
+        {
+          "src": "/media/festa-img-1549-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 33390
+        },
+        {
+          "src": "/media/festa-img-1549-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 82804
+        },
+        {
+          "src": "/media/festa-img-1549-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 51855
+        }
+      ],
+      "alt": "Thiago é erguido por convidados enquanto Marina sorri ao lado do grupo.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "festa-img-1574",
+      "src": "/media/festa-img-1574-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "reaction",
+      "narrativeOrder": 34,
+      "discoveryOrder": 17,
+      "focalPoint": {
+        "x": 51,
+        "y": 49
+      },
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJZQC7AD2Odq3jI6AAP7vluq1eAwaFlHIGSgyeB7HmPBENIDEKD+/G0iGcsxaILZjTW7f/TvztxvSv9J1nVjjiB69731WYF0GD6ZAAAA=",
+      "variants": [
+        {
+          "src": "/media/festa-img-1574-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 17624
+        },
+        {
+          "src": "/media/festa-img-1574-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 10258
+        },
+        {
+          "src": "/media/festa-img-1574-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 35506
+        },
+        {
+          "src": "/media/festa-img-1574-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 21390
+        },
+        {
+          "src": "/media/festa-img-1574-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 57034
+        },
+        {
+          "src": "/media/festa-img-1574-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 34856
+        },
+        {
+          "src": "/media/festa-img-1574-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 89418
+        },
+        {
+          "src": "/media/festa-img-1574-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 54425
+        }
+      ],
+      "alt": "Convidados levantam Thiago horizontalmente, cercados de risadas.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "festa-img-1580",
+      "src": "/media/festa-img-1580-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 18,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQAAsABABoJZQC7AEUqqlPrVDgAP72inzngGP0XY+lx+N6vm5tZkrG1Of97hY7IEPiznA3k+uUAA==",
+      "variants": [
+        {
+          "src": "/media/festa-img-1580-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 10790
+        },
+        {
+          "src": "/media/festa-img-1580-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 7262
+        },
+        {
+          "src": "/media/festa-img-1580-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 35822
+        },
+        {
+          "src": "/media/festa-img-1580-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 23763
+        }
+      ],
+      "alt": "Marina e Thiago posam com convidados em um momento descontraído.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "festa-img-1598",
+      "src": "/media/festa-img-1598-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 19,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAsABABoJZAC7AEVLa37qwoQAAD+5rUbu30fbczZuh5GwiLY17Dj3GTZRK+fpiF3gNe9l2odQpkKgRGSehi0bTJ2QBaWv41V5NAAAAA=",
+      "variants": [
+        {
+          "src": "/media/festa-img-1598-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 17664
+        },
+        {
+          "src": "/media/festa-img-1598-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 9706
+        },
+        {
+          "src": "/media/festa-img-1598-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 56048
+        },
+        {
+          "src": "/media/festa-img-1598-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 33136
+        }
+      ],
+      "alt": "Marina recebe abraços em um grupo sorridente de convidados.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "festa-img-1610",
+      "src": "/media/festa-img-1610-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 20,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoQAAsABABoJYwCdAYuvFXxRWu4AAD+3P9ey21iIrJNErOYrnKcSuUbNTh/e1YLEQ4i2uZMAdCVuT9gIRWo1c6gEoGGiiQDEQJBJZicd8sKAHmntkBAAA==",
+      "variants": [
+        {
+          "src": "/media/festa-img-1610-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 18608
+        },
+        {
+          "src": "/media/festa-img-1610-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 10421
+        },
+        {
+          "src": "/media/festa-img-1610-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 57848
+        },
+        {
+          "src": "/media/festa-img-1610-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 34237
+        }
+      ],
+      "alt": "O casal reunido com convidados ao redor de uma mesa de madeira.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "festa-img-1797",
+      "src": "/media/festa-img-1797-1080.webp",
+      "width": 3229,
+      "height": 4843,
+      "aspectRatio": 0.666735494528185,
+      "chapter": "festa",
+      "role": "narrative",
+      "narrativeOrder": 35,
+      "discoveryOrder": 21,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBACdASoQABgAPxFysFAsJqSisAgBgCIJbAC7ACG7UvJ92Zp4oxm6GUAA/uvfr9cYmGSrMxZoMaSl/C8y8mEDVRIrXQ9kkSMCqGqMpy1Y1HE67owNacZ2rLTAUXFobdCT19P0ldE8gbCiE3oENw32mvnVTFFXrkP+q+BQ8stZbr9m+TxIAA==",
+      "variants": [
+        {
+          "src": "/media/festa-img-1797-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 31186
+        },
+        {
+          "src": "/media/festa-img-1797-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 18821
+        },
+        {
+          "src": "/media/festa-img-1797-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 67280
+        },
+        {
+          "src": "/media/festa-img-1797-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 39261
+        },
+        {
+          "src": "/media/festa-img-1797-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 135326
+        },
+        {
+          "src": "/media/festa-img-1797-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 74112
+        },
+        {
+          "src": "/media/festa-img-1797-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 223338
+        },
+        {
+          "src": "/media/festa-img-1797-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 134653
+        }
+      ],
+      "alt": "Marina abraçada a duas convidadas, sorrindo na festa.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "nossos-passos-159",
+      "src": "/media/nossos-passos-159-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "memoria",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 1,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoQABgAPxFyslCsJqSisAgBgCIJZwABHus3ccGhRkhmAAD+/P8lu5kydyFZt794Kns+jCuQpUcFX5w4tVa7HAX/5bWhAeAA",
+      "variants": [
+        {
+          "src": "/media/nossos-passos-159-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 8246
+        },
+        {
+          "src": "/media/nossos-passos-159-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 5823
+        },
+        {
+          "src": "/media/nossos-passos-159-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 33186
+        },
+        {
+          "src": "/media/nossos-passos-159-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 21586
+        }
+      ],
+      "alt": "Marina e Thiago se beijam na areia, com o mar escuro ao fundo.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "nossos-passos-160",
+      "src": "/media/nossos-passos-160-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "memoria",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 2,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAwCdASoQABgAPxF0sVCsJqSisAgBgCIJZwDG9GlfuuKvlwfKAAD+/P9WZ73RD78udzo/7UHten40ZU7//T9B7ZEPdRYWWE/E8+9NX0qi9QbyZU3CxstAAAA=",
+      "variants": [
+        {
+          "src": "/media/nossos-passos-160-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 15138
+        },
+        {
+          "src": "/media/nossos-passos-160-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 9550
+        },
+        {
+          "src": "/media/nossos-passos-160-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 56216
+        },
+        {
+          "src": "/media/nossos-passos-160-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 35333
+        }
+      ],
+      "alt": "Marina e Thiago caminham de mãos dadas à beira do mar à noite.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "nossos-passos-161",
+      "src": "/media/nossos-passos-161-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "memoria",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 3,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoQABgAPxFysVCsJqSisAgBgCIJZQABHus2kIhytZUYbgAA/vz/Jb7z3Pef/nxDo3hxdpuOz+sxehCGac912mUzAfczkR6ZFp9xTI/pW1jvV2FYAAA=",
+      "variants": [
+        {
+          "src": "/media/nossos-passos-161-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 15506
+        },
+        {
+          "src": "/media/nossos-passos-161-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 9374
+        },
+        {
+          "src": "/media/nossos-passos-161-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 58126
+        },
+        {
+          "src": "/media/nossos-passos-161-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 35309
+        }
+      ],
+      "alt": "O casal caminha na areia com a cauda do vestido acompanhando o movimento.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "nossos-passos-162",
+      "src": "/media/nossos-passos-162-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "memoria",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 4,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoQABgAPxFysFCsJqSisAgBgCIJZQDImGlfv6PoRdDCwLogAP78/y/3TS3e9sW3pIvDbzX2KMc7JfuWbEWG7/tOclnChvyOG4M2t3Mf5SKsq7wKoqZuwvK+RbddhDkAAAA=",
+      "variants": [
+        {
+          "src": "/media/nossos-passos-162-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 16606
+        },
+        {
+          "src": "/media/nossos-passos-162-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 10075
+        },
+        {
+          "src": "/media/nossos-passos-162-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 61496
+        },
+        {
+          "src": "/media/nossos-passos-162-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 37016
+        }
+      ],
+      "alt": "Marina e Thiago de mãos dadas, olhando um para o outro na praia.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "nossos-passos-164",
+      "src": "/media/nossos-passos-164-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "memoria",
+      "role": "epilogue",
+      "narrativeOrder": 36,
+      "discoveryOrder": 5,
+      "focalPoint": {
+        "x": 50,
+        "y": 57
+      },
+      "placeholder": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAwCdASoQABgAPxFwsFAsJiSisAgBgCIJZQABHuso674/c+4ygSwAAP79UVjl4CLeveEF0boqJLWFAhiiAb2JN8G1wB5K4yxMhGvyIzvd/lfoZr8wahZ+Ffcz4CgYCIOO+2gxpNyh0+nSgrgCzzihLHlxg3za/oiWC+0F2AAAAA==",
+      "variants": [
+        {
+          "src": "/media/nossos-passos-164-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 15750
+        },
+        {
+          "src": "/media/nossos-passos-164-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 9939
+        },
+        {
+          "src": "/media/nossos-passos-164-768.webp",
+          "width": 768,
+          "height": 1152,
+          "format": "webp",
+          "bytes": 29956
+        },
+        {
+          "src": "/media/nossos-passos-164-768.avif",
+          "width": 768,
+          "height": 1152,
+          "format": "avif",
+          "bytes": 18744
+        },
+        {
+          "src": "/media/nossos-passos-164-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 53264
+        },
+        {
+          "src": "/media/nossos-passos-164-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 33305
+        },
+        {
+          "src": "/media/nossos-passos-164-1440.webp",
+          "width": 1440,
+          "height": 2160,
+          "format": "webp",
+          "bytes": 93426
+        },
+        {
+          "src": "/media/nossos-passos-164-1440.avif",
+          "width": 1440,
+          "height": 2160,
+          "format": "avif",
+          "bytes": 58614
+        }
+      ],
+      "alt": "Marina e Thiago sorriem um para o outro, juntos na praia à noite.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": true
+    },
+    {
+      "id": "nossos-passos-165",
+      "src": "/media/nossos-passos-165-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "memoria",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 6,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAAsABABoJagCsAEKmSw6tRYAAP72jjCNeyBF/2ebcmcooWW9tngpiV1X32RSwrhSxQL+DhOTcugAAAA=",
+      "variants": [
+        {
+          "src": "/media/nossos-passos-165-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 6214
+        },
+        {
+          "src": "/media/nossos-passos-165-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 4549
+        },
+        {
+          "src": "/media/nossos-passos-165-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 18386
+        },
+        {
+          "src": "/media/nossos-passos-165-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 12985
+        }
+      ],
+      "alt": "Detalhe dos pés descalços do casal e da barra do vestido sobre a areia.",
+      "orientation": "landscape",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "nossos-passos-167",
+      "src": "/media/nossos-passos-167-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "memoria",
+      "role": "discovery",
+      "narrativeOrder": null,
+      "discoveryOrder": 7,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoQABgAPxFysFAsJqSisAgBgCIJQBOmUAA5ZCr2QsTRs7uAAP7d5zmQl4Q4rDKeu0MvHi6qdQQQWhMtXGh8v36en2du5kTz0Ka8bhLdbEl4E8DrdN5Z02muo07koTxvGNwGn5/9CEOkzQxP8RXDJznnuCwAAA==",
+      "variants": [
+        {
+          "src": "/media/nossos-passos-167-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 19466
+        },
+        {
+          "src": "/media/nossos-passos-167-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 12955
+        },
+        {
+          "src": "/media/nossos-passos-167-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 70740
+        },
+        {
+          "src": "/media/nossos-passos-167-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 44821
+        }
+      ],
+      "alt": "A espuma do mar alcança os pés descalços do casal.",
+      "orientation": "portrait",
+      "cropTolerance": "moderate",
+      "featured": false
+    },
+    {
+      "id": "decoracao-12",
+      "src": "/media/decoracao-12-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 22,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAADwBACdASoQABgAPxFysFAsJqSisAgBgCIJZgCdDiAGsCnAFeIeDWr/fDc7pRFkCp4A995Iju4hVXgqVYVyUSz75XeYzLvIUkwwDT61yN5RktQC9DKPAC915PIOlDzijoSY53okP2GkDljz+vbFKPeF0pFvB2O8gMd2lg04Me4TgYTrxwuK+SXhqVwZgmt9q4GnQbk+pXLYYBCZqa6rz2AYv75LPAFSpZNJL2D+QPAlaw8RYAA=",
+      "variants": [
+        {
+          "src": "/media/decoracao-12-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 44036
+        },
+        {
+          "src": "/media/decoracao-12-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 24104
+        },
+        {
+          "src": "/media/decoracao-12-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 145456
+        },
+        {
+          "src": "/media/decoracao-12-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 79361
+        }
+      ],
+      "alt": "Bolo branco de vários andares entre flores e doces.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-13",
+      "src": "/media/decoracao-13-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 23,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoQABgAPxFysFAsJqSisAgBgCIJbACdBagBPN3ly5YTK2+T9gBbAAD+cyMgMszSLRnDlb6CzxoS1kJ4mQBMUy87OAe73HX/m2gfDF8+eT2N6/FtoIG/IxvipXoefdJyH6A/wNjZgdlf3br1Tk+a1gNTXcGn5SuSBAcuOQZTxALsqAXAQKAAAA==",
+      "variants": [
+        {
+          "src": "/media/decoracao-13-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 28022
+        },
+        {
+          "src": "/media/decoracao-13-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 17175
+        },
+        {
+          "src": "/media/decoracao-13-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 102156
+        },
+        {
+          "src": "/media/decoracao-13-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 58758
+        }
+      ],
+      "alt": "Doces com morangos dispostos em uma travessa escura.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-14",
+      "src": "/media/decoracao-14-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 24,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAABwBACdASoQABgAPxFwsFAsJiSisAgBgCIJbACdMoR3AdBAa1lJoGMymlcXIAD2mDzCbIaV23FM1XKxtod1tqRPAmXr+3/guNRTaA0KIOh2wBdNn2BfkP6AJKefetlvR0seEgAHwliZ3WgZzQAL5Sa2ioo1IBvz2lUegtp10qNKO1ITK/lFj1kuOFBWqLMYvUzKZH5pzY+alMqtjiEyog6L/2HCiunq2m5dRjiz0QMIsK+wNpL8PwcAAAA=",
+      "variants": [
+        {
+          "src": "/media/decoracao-14-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 33178
+        },
+        {
+          "src": "/media/decoracao-14-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 18984
+        },
+        {
+          "src": "/media/decoracao-14-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 115922
+        },
+        {
+          "src": "/media/decoracao-14-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 62957
+        }
+      ],
+      "alt": "Pequenos doces com folhas verdes sobre a mesa de madeira.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-15",
+      "src": "/media/decoracao-15-1080.webp",
+      "width": 3943,
+      "height": 5915,
+      "aspectRatio": 0.6666103127641589,
+      "chapter": "festa",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 25,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAAAwBACdASoQABgAPxFwsFAsJiSisAgBgCIJaACdAywBrFAiFIujPFqCvAAA+wRn6IZ8fm01Lz8Nr/o9Zc/0W7zWxuAybbfikTdpVHhNiN8M79ra5JuD70pfB7qLffdNLdqU9yMOWM6qb2uQRocosFvROVvSbG+CEmduflgfj7dJ3DFt1lxQ07dgmCEvDkzpQD6/ZKiSwQ3ToeOb8PElNLpiwvMaDXRhe4CAAA==",
+      "variants": [
+        {
+          "src": "/media/decoracao-15-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 46152
+        },
+        {
+          "src": "/media/decoracao-15-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 25217
+        },
+        {
+          "src": "/media/decoracao-15-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 153962
+        },
+        {
+          "src": "/media/decoracao-15-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 84247
+        }
+      ],
+      "alt": "Bolo branco diante do mar, cercado de flores.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-16",
+      "src": "/media/decoracao-16-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 26,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABQBACdASoQABgAPxFysFAsJqSisAgBgCIJbACdMoBOABfHr5a4prWUYKIAAP3vNwLuasOV1Kj15PVW0rqruQlL2n6v0EN4n3QUdmiGjh8oGKvKqdVmZGE5k9XQ1nrXzw5uhXeK4f/Uc7DG46d//Yo/4MaOYt1HF5to38bScgXvUvmstaFOtVWcU86rx1pj4cvJA1hVk4VSvW+ymoVTGfrSwFPkzwAA",
+      "variants": [
+        {
+          "src": "/media/decoracao-16-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 38554
+        },
+        {
+          "src": "/media/decoracao-16-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 21026
+        },
+        {
+          "src": "/media/decoracao-16-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 127484
+        },
+        {
+          "src": "/media/decoracao-16-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 67102
+        }
+      ],
+      "alt": "Cesta de madeira com doces de chocolate e folhagens.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-17",
+      "src": "/media/decoracao-17-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 27,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACQBACdASoQABgAPxFysFAsJqSisAgBgCIJbACdMoBOAbTQePK3mec1ciq+HAAA4neY83mYBcPOcFLK2IdgFYnaCB28aCm8SYH0sR5FAvh3BkP89jDDnEjZE8UIvKIHpCnm4RYu9ohBa4rL2zJYU6hzLDuwL9frnRtEKZh4srlFbynjdHYtlocCR4SP25fcZNaLR8+oZErgrx2Uq2CT9Ss8AAA=",
+      "variants": [
+        {
+          "src": "/media/decoracao-17-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 44126
+        },
+        {
+          "src": "/media/decoracao-17-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 23384
+        },
+        {
+          "src": "/media/decoracao-17-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 150700
+        },
+        {
+          "src": "/media/decoracao-17-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 80622
+        }
+      ],
+      "alt": "Travessas de doces variados sobre a mesa de madeira.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-18",
+      "src": "/media/decoracao-18-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 28,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACQBACdASoQABgAPxFysFAsJqSisAgBgCIJZgAD5kofATLf7jqxw/C1EWTT3VAA/loSp/J2/VeeBQKUKlgvHXttuH5za01NZLyNaB4vr/EwCtiodb67PL6HsektMTvuT32ygIBziG42o3vYBPWUReKdlGo6Dj31tw81QQAqvUTxrH5PoGqusNn4q8jXY8qs2gv/o4ii87k+xcUUWzJuUUg9JbsudM1XwAAPn6A6dCtwyTwAAAA=",
+      "variants": [
+        {
+          "src": "/media/decoracao-18-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 31020
+        },
+        {
+          "src": "/media/decoracao-18-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 18494
+        },
+        {
+          "src": "/media/decoracao-18-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 108234
+        },
+        {
+          "src": "/media/decoracao-18-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 62523
+        }
+      ],
+      "alt": "Doces brancos alinhados ao lado da base do bolo.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06390",
+      "src": "/media/decoracao-gab06390-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 8,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoQABgAPxFwsFAsJiSisAgBgCIJaACdLoAAWd2urtDISuGxLEAA+F9fWyfi+ZhFMmJAcfwi1n8ZR78gDMBTVcu2HN7EATjfUR9W1wiH/GqAQdUVrb5SblLilBtIBu23e0AUiLujxg/mPifqLq3iY7IZzBWLM4YzgX/E2lcGWAA=",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06390-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 20906
+        },
+        {
+          "src": "/media/decoracao-gab06390-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 13684
+        },
+        {
+          "src": "/media/decoracao-gab06390-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 75294
+        },
+        {
+          "src": "/media/decoracao-gab06390-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 47665
+        }
+      ],
+      "alt": "Pequenos frascos azuis organizados sobre uma mesa.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06391",
+      "src": "/media/decoracao-gab06391-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 9,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwAwCdASoQABgAPxFysFAsJqSisAgBgCIJZACdAB6z9a3M6ZIfC6wAAP7UZuWAoK/IcuOlOlCkhLYuMt4rTZO3jY3J4nfqM9wzD6KMCBrgD8/+ASSlS4HiyN9ZIlPvHC1LBmKxilnx1VAbIRx0RDoMAnRMKV9Yb0csXAAA",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06391-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 20336
+        },
+        {
+          "src": "/media/decoracao-gab06391-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 13373
+        },
+        {
+          "src": "/media/decoracao-gab06391-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 78162
+        },
+        {
+          "src": "/media/decoracao-gab06391-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 49231
+        }
+      ],
+      "alt": "Lembranças embaladas e amarradas com fitas verdes.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06394",
+      "src": "/media/decoracao-gab06394-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 10,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAQBACdASoQABgAPxFwsFAsJiSisAgBgCIJYgCdMoADTih89TuHWUDBgAD+wwScfEEKNZ4Kly1FrSHRMCYuG3cDK1SAt/8pvWYscU4LtP3xlPBbv2hScIe2HzR7IRMADJDhe2H6Hv+99988cDRaEXFsWVTTREvTybee2Dfq96+D/NK2d4VYkAAA",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06394-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 34370
+        },
+        {
+          "src": "/media/decoracao-gab06394-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 19487
+        },
+        {
+          "src": "/media/decoracao-gab06394-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 115664
+        },
+        {
+          "src": "/media/decoracao-gab06394-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 65576
+        }
+      ],
+      "alt": "Cesta de lembranças com laços verdes.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06397",
+      "src": "/media/decoracao-gab06397-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 11,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBACdASoQABgAPxFysFAsJqSisAgBgCIJYgCdMoADKstXX9GEhbeBfogA90WJIZ/qGKCgSm6WWx8kgXA01zXXps+RYI39XBNT3nsew9pYRyopWg06vfh094bvl7Oy9VXV4i3BB5lpTA0LANLm4alMAlRxk1M+hGr7pAAA",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06397-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 32908
+        },
+        {
+          "src": "/media/decoracao-gab06397-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 17727
+        },
+        {
+          "src": "/media/decoracao-gab06397-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 112222
+        },
+        {
+          "src": "/media/decoracao-gab06397-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 62184
+        }
+      ],
+      "alt": "Bolo decorado com morangos sobre uma base de palha.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06447",
+      "src": "/media/decoracao-gab06447-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 12,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAQBACdASoQABgAPxFwsFAsJiSisAgBgCIJQBWCP/zwABcPmy9hjvUB8AD+seb2YTFx+6Bzt0084TX4jESZy7acg0sp1auLV+rWpkl1n6onfshb/1tiLZf8vVvwgI4JOLNVju6vXZTqFYQV6va2yfX4JnOopX0A9JmLvYUn1Lx4cjsOpTEEvjn4WzMIYSR6dN4KogAA",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06447-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 28458
+        },
+        {
+          "src": "/media/decoracao-gab06447-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 15937
+        },
+        {
+          "src": "/media/decoracao-gab06447-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 97244
+        },
+        {
+          "src": "/media/decoracao-gab06447-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 54884
+        }
+      ],
+      "alt": "Taças, flores brancas e jogo americano de palha na mesa.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06449",
+      "src": "/media/decoracao-gab06449-1080.webp",
+      "width": 3403,
+      "height": 5105,
+      "aspectRatio": 0.6666013712047013,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 13,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADwAwCdASoQABgAPxFysFAsJqSisAgBgCIJQBibBCeKH39hS3YF9hgAAP7o3vD7giUobydin1w/G59bR1Fg8SQ0ttO+ILKjhQ8bfE+/4XYbACDo1fxAKQL7vaGhcDhc9ONVSp9pKafjFISVR7D3wHLaGK8i8pMpFxGERKC6gIR2dApYbgAAAA==",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06449-480.webp",
+          "width": 480,
+          "height": 721,
+          "format": "webp",
+          "bytes": 19612
+        },
+        {
+          "src": "/media/decoracao-gab06449-480.avif",
+          "width": 480,
+          "height": 721,
+          "format": "avif",
+          "bytes": 13331
+        },
+        {
+          "src": "/media/decoracao-gab06449-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 74098
+        },
+        {
+          "src": "/media/decoracao-gab06449-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 48072
+        }
+      ],
+      "alt": "Placa de boas-vindas ao casamento de Marina e Thiago.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06455",
+      "src": "/media/decoracao-gab06455-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 14,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACwBACdASoQABgAPxFysFAsJqSisAgBgCIJQBOmUAzgVoAgadiAMC2X0Vda0YYAAN6E2B9YuvhGoOpT1DS3bN4UvwR7DvMVLrf6HE9MNHbqpFcZNuine2ZB9hgvsX5iAfO+BsJwmOJDzIkbdo8s54QO1wGdbsn13/q8V3EpDmBkAKUqZIPPmVzy+FAAAA==",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06455-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 31524
+        },
+        {
+          "src": "/media/decoracao-gab06455-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 17622
+        },
+        {
+          "src": "/media/decoracao-gab06455-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 102374
+        },
+        {
+          "src": "/media/decoracao-gab06455-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 56892
+        }
+      ],
+      "alt": "Mesa posta com taças, flores brancas e fibras naturais.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06470",
+      "src": "/media/decoracao-gab06470-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 15,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBACdASoQABgAPxFysFAsJqSisAgBgCIJQBdgMZUc23Vf42ZbJLSktK5CAAD8ZxwjHvbHG3i/HlAP+cvU+d0IvC+Abu+BnvbWTElV99SzFJxFzwh5DIwqtsUI5mUqD7myu5+jybLxjBm+saCQBF/9ml+e1mbi64S6mO4bJX/1P2uJQYWrc04mr5xXb+MqouM4GSkHa+iAAA==",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06470-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 17484
+        },
+        {
+          "src": "/media/decoracao-gab06470-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 11587
+        },
+        {
+          "src": "/media/decoracao-gab06470-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 62240
+        },
+        {
+          "src": "/media/decoracao-gab06470-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 41048
+        }
+      ],
+      "alt": "Grande folha verde e uma flor amarela na decoração.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06487",
+      "src": "/media/decoracao-gab06487-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 16,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACwAwCdASoQABgAPxFysFAsJqSisAgBgCIJaACdMoABXHnkUCK90AD+R9o4UcEtOS6ZcS7B2u4EJPl2tMoh5X1IdURTmYcZEDyKw1UldF7sc+F4WDwKfSK/16OwLrAh0bixAUKiQZ4izoFtF+TqttW1AnAO8LS4qqyeGuHQQIH5WY8ctf4AAA==",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06487-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 22388
+        },
+        {
+          "src": "/media/decoracao-gab06487-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 14111
+        },
+        {
+          "src": "/media/decoracao-gab06487-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 80318
+        },
+        {
+          "src": "/media/decoracao-gab06487-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 47105
+        }
+      ],
+      "alt": "Fileiras de doces cobertos com morangos.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06489",
+      "src": "/media/decoracao-gab06489-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 17,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBACdASoQABgAPxFysFAsJqSisAgBgCIJYgCdMoACfumLCcTc2R+fWAD79WkJomAOD7d6Ji2LD2zg17xGVCqjZGWoXxxsBhB+EORZYImasQrwCxa+CiwG8H0IzbrLY7Ox6E2f+xM8bmZudCaBwXBVsKmhfRufgCTQkUv5Rl2nHgiqtEAAAA==",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06489-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 28012
+        },
+        {
+          "src": "/media/decoracao-gab06489-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 16706
+        },
+        {
+          "src": "/media/decoracao-gab06489-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 89184
+        },
+        {
+          "src": "/media/decoracao-gab06489-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 51826
+        }
+      ],
+      "alt": "Doces e flores brancas na mesa de madeira.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06494",
+      "src": "/media/decoracao-gab06494-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 29,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAQBACdASoQABgAPxFysFAsJqSisAgBgCIJQBOgMZARh12Et6RK1h4oAAD+wHiUeBnuGVJ225EZlemWYhPEbaswoISEZaq7P1x5Cr7BokQoVQERNYQzeLd0AHwnsjs8xA2PMq/UftxRDolzHBHKmeo/DNqnb4oZbiPHX5AVxGh4GllRmzNnVHM5bAJPYZLmAAA=",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06494-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 43950
+        },
+        {
+          "src": "/media/decoracao-gab06494-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 24093
+        },
+        {
+          "src": "/media/decoracao-gab06494-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 135658
+        },
+        {
+          "src": "/media/decoracao-gab06494-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 77499
+        }
+      ],
+      "alt": "Mesa do bolo decorada com flores brancas ao entardecer.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-gab06505",
+      "src": "/media/decoracao-gab06505-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "comeco",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 18,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAsABABoJQBOgCL5kLSvOZLAAP7svkV6z5isDZ9e60NpoaOaoqRGeAcJd0jNkMTSo0ki/8hSoTyWjonhytAAAAA=",
+      "variants": [
+        {
+          "src": "/media/decoracao-gab06505-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 14562
+        },
+        {
+          "src": "/media/decoracao-gab06505-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 8291
+        },
+        {
+          "src": "/media/decoracao-gab06505-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 42160
+        },
+        {
+          "src": "/media/decoracao-gab06505-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 26308
+        }
+      ],
+      "alt": "Cestas de lembranças com fitas verdes sobre um aparador.",
+      "orientation": "landscape",
+      "cropTolerance": "low",
+      "featured": false
+    },
+    {
+      "id": "decoracao-img-0069",
+      "src": "/media/decoracao-img-0069-1080.webp",
+      "width": 6000,
+      "height": 4000,
+      "aspectRatio": 1.5,
+      "chapter": "festa",
+      "role": "detail",
+      "narrativeOrder": 25,
+      "discoveryOrder": 30,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsABABoJbACdAD0XiYu3oAAAP5MuetCc1AeN42lTlHR4i0oSaHmwgr7uO1PcF5q14urMTaLDkItVFFUaNIJroII13yCgMo0TAYAI3FgzzAA",
+      "variants": [
+        {
+          "src": "/media/decoracao-img-0069-480.webp",
+          "width": 480,
+          "height": 320,
+          "format": "webp",
+          "bytes": 31470
+        },
+        {
+          "src": "/media/decoracao-img-0069-480.avif",
+          "width": 480,
+          "height": 320,
+          "format": "avif",
+          "bytes": 15117
+        },
+        {
+          "src": "/media/decoracao-img-0069-768.webp",
+          "width": 768,
+          "height": 512,
+          "format": "webp",
+          "bytes": 67658
+        },
+        {
+          "src": "/media/decoracao-img-0069-768.avif",
+          "width": 768,
+          "height": 512,
+          "format": "avif",
+          "bytes": 33753
+        },
+        {
+          "src": "/media/decoracao-img-0069-1080.webp",
+          "width": 1080,
+          "height": 720,
+          "format": "webp",
+          "bytes": 112020
+        },
+        {
+          "src": "/media/decoracao-img-0069-1080.avif",
+          "width": 1080,
+          "height": 720,
+          "format": "avif",
+          "bytes": 57152
+        },
+        {
+          "src": "/media/decoracao-img-0069-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "format": "webp",
+          "bytes": 181760
+        },
+        {
+          "src": "/media/decoracao-img-0069-1440.avif",
+          "width": 1440,
+          "height": 960,
+          "format": "avif",
+          "bytes": 92152
+        }
+      ],
+      "alt": "Mesa do bolo diante do mar azul, sob luminárias de fibras naturais.",
+      "orientation": "landscape",
+      "cropTolerance": "low",
+      "featured": true
+    },
+    {
+      "id": "decoracao-img-0073",
+      "src": "/media/decoracao-img-0073-1080.webp",
+      "width": 4000,
+      "height": 6000,
+      "aspectRatio": 0.6666666666666666,
+      "chapter": "festa",
+      "role": "detail",
+      "narrativeOrder": null,
+      "discoveryOrder": 31,
+      "focalPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "placeholder": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACwBACdASoQABgAPxFysFAsJqSisAgBgCIJZgCdMoFWADlaEYp1mvhwDWrOzjGgAPjkrqqUt83M5DwxhBy9l16supnnPFAN4Vgo5fes7ln213Nssj+oDDg/nN8R0WTX1bja9G/dRi/iLfpO7nSfG/njUGpksmgv4Y3+hi67jg5WFVm43q2v4L7LhRgP6m4gOVW9KCvC3jDQ987oDqN+VM2ttvELxio4Fnk6gYP6i8SYFyeysQAAAA==",
+      "variants": [
+        {
+          "src": "/media/decoracao-img-0073-480.webp",
+          "width": 480,
+          "height": 720,
+          "format": "webp",
+          "bytes": 44266
+        },
+        {
+          "src": "/media/decoracao-img-0073-480.avif",
+          "width": 480,
+          "height": 720,
+          "format": "avif",
+          "bytes": 24178
+        },
+        {
+          "src": "/media/decoracao-img-0073-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "format": "webp",
+          "bytes": 146070
+        },
+        {
+          "src": "/media/decoracao-img-0073-1080.avif",
+          "width": 1080,
+          "height": 1620,
+          "format": "avif",
+          "bytes": 80355
+        }
+      ],
+      "alt": "Bolo branco e doces sob a iluminação quente da recepção.",
+      "orientation": "portrait",
+      "cropTolerance": "low",
+      "featured": false
+    }
+  ]
+}

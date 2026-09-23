@@ -1,0 +1,21 @@
+node_modules/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+
+# Ignore raw camera backups and uncompressed source photos
+Marina e Thiago/
+public/convidados/
+public/o encontro/*.jpg
+
+reports/contact-*.jpg
+reports/qa/
+.data/
+playwright-report/
+test-results/
+
+.npm-cache/
+.cache/
+*.log
+.originkit/

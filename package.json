@@ -1,0 +1,49 @@
+{
+  "name": "marina-thiago-horizonte",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 -p 5000",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "photos:inspect": "tsx scripts/generate-contact-sheet.ts",
+    "photos:ingest": "tsx scripts/ingest-wedding.ts",
+    "qa": "tsx scripts/qa.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1137.0",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource-variable/newsreader": "^5.3.0",
+    "@radix-ui/react-dialog": "^1.1.23",
+    "@supabase/supabase-js": "^2.116.0",
+    "clsx": "^2.1.1",
+    "exifr": "^7.1.3",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "lucide-react": "^1.47.0",
+    "motion": "^13.4.0",
+    "next": "^16.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sharp": "^0.35.4",
+    "tailwind-merge": "^3.7.0",
+    "three": "^0.186.0",
+    "tw-animate-css": "^1.4.0",
+    "vecteur": "^0.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

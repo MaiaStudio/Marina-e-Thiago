@@ -45,9 +45,30 @@ test('concurrent submissions enforce the three-per-window limit independently pe
   assert.equal((await listMessages('rate-wedding')).length,3);
   await saveMessage('different-wedding',input,'one-ip');
 });
-test('storageMode returns supabase when credentials exist, local otherwise', () => {
+test('storageMode returns supabase when credentials exist, local in dev, unavailable in prod without credentials', async () => {
+  // Local development / test without credentials
   assert.equal(storageMode(), 'local');
-  Object.assign(process.env, { SUPABASE_URL: 'https://test.supabase.co', SUPABASE_SERVICE_ROLE_KEY: 'test-key' });
+
+  // Supabase configured with SUPABASE_SECRET_KEY
+  Object.assign(process.env, { SUPABASE_URL: 'https://test.supabase.co', SUPABASE_SECRET_KEY: 'test-secret' });
+  assert.equal(storageMode(), 'supabase');
+  delete process.env.SUPABASE_SECRET_KEY;
+
+  // Supabase configured with legacy SUPABASE_SERVICE_ROLE_KEY
+  Object.assign(process.env, { SUPABASE_SERVICE_ROLE_KEY: 'test-role-key' });
   assert.equal(storageMode(), 'supabase');
   Object.assign(process.env, { SUPABASE_URL: '', SUPABASE_SERVICE_ROLE_KEY: '' });
+
+  // In production without Supabase credentials
+  const originalEnv = process.env.NODE_ENV;
+  Object.assign(process.env, { NODE_ENV: 'production' });
+  assert.equal(storageMode(), 'unavailable');
+
+  // Attempting to read local storage in production should throw NotConfiguredError
+  await assert.rejects(() => listMessages('wedding-a'));
+
+  // Restore environment
+  Object.assign(process.env, { NODE_ENV: originalEnv });
+  assert.equal(storageMode(), 'local');
 });
+

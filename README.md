@@ -1,4 +1,4 @@
-﻿# Marina & Thiago — Horizonte em movimento
+# Marina & Thiago — Horizonte em movimento
 
 Experiência editorial de casamento, projetada primeiro em **390 × 844**. Convite original, sete capítulos, **36 fotografias na narrativa** e **77 acessíveis em seus momentos**, scroll nativo, três transições principais e mural de lembranças.
 
@@ -37,7 +37,10 @@ Os originais permanecem fora de `public/` e estão excluídos do rastreamento de
 ## Conectar Supabase, R2 e Turnstile
 
 1. Copie `.env.example` para `.env.local` e preencha os valores. Não use `NEXT_PUBLIC_` para nenhuma chave secreta.
-2. No projeto Supabase, aplique `supabase/migrations/202609210001_guestbook.sql`. Configure `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY` apenas no servidor.
+2. No projeto Supabase, aplique as migrações:
+   - `supabase/migrations/202609210001_guestbook.sql` (estrutura inicial)
+   - `supabase/migrations/202609280001_avatar_url.sql` (adiciona `avatar_url` e atualiza a função RPC `submit_guestbook_message`)
+   Configure `SUPABASE_URL` e `SUPABASE_SECRET_KEY` (ou `SUPABASE_SERVICE_ROLE_KEY`) apenas no servidor (ex: Vercel Environment Variables). Nunca utilize a `anon_key` para a API do mural.
 3. Crie dois buckets R2 distintos: um **privado** para originais e outro para variantes públicas. Vincule o segundo a um domínio de mídia e configure `NEXT_PUBLIC_MEDIA_URL` (exemplo: `https://media.seudominio.com`, sem o caminho do casamento).
 4. Execute o upload explicitamente:
 
@@ -45,9 +48,9 @@ Os originais permanecem fora de `public/` e estão excluídos do rastreamento de
 node --env-file=.env.local --import tsx scripts/ingest-wedding.ts --upload
 ```
 
-5. Crie um widget Turnstile para o hostname final e configure `NEXT_PUBLIC_TURNSTILE_SITE_KEY` e `TURNSTILE_SECRET_KEY`. O servidor valida `success`, hostname, action `guestbook` e cdata do casamento.
-6. Defina `NEXT_PUBLIC_SITE_URL` com a origem HTTPS final e `RATE_LIMIT_SECRET` com um segredo aleatório de pelo menos 32 bytes. Em Vercel, o IP usa o header definido pela plataforma. Só habilite `TRUST_CLOUDFLARE_PROXY` se o servidor estiver atrás de Cloudflare e o acesso direto à origem estiver bloqueado. Em outra hospedagem, adapte a origem confiável do IP; sem ela o limite é compartilhado entre os visitantes, de forma conservadora.
-7. Configure as mesmas variáveis no serviço de hospedagem Next.js e gere um novo build. As variáveis `NEXT_PUBLIC_*` são incorporadas no build.
+5. Crie um widget Turnstile para o hostname final (`marinathiago.vercel.app`) e configure `NEXT_PUBLIC_TURNSTILE_SITE_KEY` e `TURNSTILE_SECRET_KEY`. O servidor valida `success`, hostname, action `guestbook` e cdata do casamento.
+6. Defina `NEXT_PUBLIC_SITE_URL=https://marinathiago.vercel.app` e `RATE_LIMIT_SECRET` com um segredo aleatório de pelo menos 32 bytes. Em Vercel, o IP usa o header definido pela plataforma. Só habilite `TRUST_CLOUDFLARE_PROXY` se o servidor estiver atrás de Cloudflare e o acesso direto à origem estiver bloqueado.
+7. Configure as variáveis no painel da Vercel (Project -> Settings -> Environment Variables) e gere um novo Production Deployment. As variáveis `NEXT_PUBLIC_*` são incorporadas durante o build.
 
 ```powershell
 npm.cmd run build

@@ -82,44 +82,6 @@ function Turnstile({ onToken, reset }: { onToken: (token: string) => void; reset
   );
 }
 
-const defaultTestimonials: TestimonialItem[] = [
-  {
-    text: "Que a vida a dois seja leve e cheia de cumplicidade como o pôr do sol de Cumbuco. Felicidades infinitas aos noivos!",
-    name: "Helena & Roberto",
-    role: "Padrinhos",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces&q=80",
-  },
-  {
-    text: "Um casamento inesquecível! Marina e Thiago, que a alegria contagiante deste dia acompanhe vocês por toda a jornada.",
-    name: "Camila Duarte",
-    role: "Amiga da noiva",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=faces&q=80",
-  },
-  {
-    text: "Que emoção ver dois corações tão generosos celebrando essa união tão linda à beira-mar.",
-    name: "Lucas Menezes",
-    role: "Padrinho",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces&q=80",
-  },
-  {
-    text: "Marina e Thiago, testemunhar o amor de vocês é inspirador. Parabéns por essa festa mágica!",
-    name: "Beatriz e André",
-    role: "Família",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces&q=80",
-  },
-  {
-    text: "Que privilégio celebrar esse amor no Ceará com vocês! Viva o casal!",
-    name: "Rodrigo Paiva",
-    role: "Amigo do noivo",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces&q=80",
-  },
-  {
-    text: "O amor nos detalhes, a brisa suave do mar e a energia linda de vocês dois. Um dia verdadeiramente especial!",
-    name: "Juliana Santos",
-    role: "Amiga do casal",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces&q=80",
-  },
-];
 
 export default function GuestbookWall() {
   const section = useRef<HTMLElement>(null);
@@ -261,22 +223,22 @@ export default function GuestbookWall() {
     }
   };
 
-  // Prepare testimonials for the Bookmarked TestimonialsColumn component
+  // Prepare testimonials exclusively from real messages fetched from API / Supabase
   const { firstColumn, secondColumn } = useMemo(() => {
     const userTestimonials: TestimonialItem[] = messages.map(m => ({
+      id: m.id,
       text: m.message,
       image: m.avatar_url,
       name: m.guest_name,
       role: m.relationship || 'Convidado',
     }));
 
-    const combined: TestimonialItem[] = [...userTestimonials, ...defaultTestimonials];
-    const col1 = combined.filter((_, i) => i % 2 === 0);
-    const col2 = combined.filter((_, i) => i % 2 === 1);
+    const col1 = userTestimonials.filter((_, i) => i % 2 === 0);
+    const col2 = userTestimonials.filter((_, i) => i % 2 === 1);
 
     return {
-      firstColumn: col1.length ? col1 : defaultTestimonials.slice(0, 3),
-      secondColumn: col2.length ? col2 : defaultTestimonials.slice(3, 6),
+      firstColumn: col1,
+      secondColumn: col2,
     };
   }, [messages]);
 
@@ -472,6 +434,7 @@ export default function GuestbookWall() {
                       type="submit"
                       disabled={
                         submitting ||
+                        mode === 'unavailable' ||
                         (!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !token)
                       }
                     >
@@ -503,10 +466,35 @@ export default function GuestbookWall() {
 
         {/* Right Column: Bookmarked Testimonials Column Component filling the right space */}
         <div className="guestbook-showcase">
-          <div className="guestbook-columns-wrapper [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent)]">
-            <TestimonialsColumn testimonials={firstColumn} duration={20} className="w-full sm:w-[280px]" />
-            <TestimonialsColumn testimonials={secondColumn} duration={26} className="hidden sm:block w-full sm:w-[280px]" />
-          </div>
+          {messages.length === 0 && !loading ? (
+            <div className="guestbook-empty-state">
+              <p className="empty-title">Ainda não há lembranças por aqui.</p>
+              <p className="empty-subtitle">Seja o primeiro a deixar uma mensagem para Marina & Thiago.</p>
+            </div>
+          ) : messages.length > 0 ? (
+            <div
+              className={`guestbook-columns-wrapper ${
+                messages.length > 2
+                  ? "[mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent)]"
+                  : ""
+              }`}
+            >
+              <TestimonialsColumn
+                testimonials={firstColumn}
+                speed={26}
+                initialDirection={1}
+                className="w-full sm:w-[280px]"
+              />
+              {secondColumn.length > 0 && (
+                <TestimonialsColumn
+                  testimonials={secondColumn}
+                  speed={20}
+                  initialDirection={1}
+                  className="hidden sm:block w-full sm:w-[280px]"
+                />
+              )}
+            </div>
+          ) : null}
         </div>
       </div>
 

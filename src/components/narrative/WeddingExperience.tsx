@@ -17,6 +17,8 @@ function Progress() {
   return <m.div className="story-progress" aria-hidden="true" style={{ scaleX: scrollYProgress, originX: 0 }} />;
 }
 
+import { PhotographerFooter } from '@/components/footer/PhotographerFooter';
+
 export function WeddingExperience() {
   const [stage, setStage] = useState<'locked' | 'transitioning' | 'opened'>('locked');
   const reduced = useReducedMotion();
@@ -64,7 +66,7 @@ export function WeddingExperience() {
       <LazyMotion features={domAnimation} strict>
         <MotionConfig reducedMotion="user" transition={{ duration: .55, ease: [.4, 0, .2, 1] }}>
           <Progress />
-          <main>
+          <main className="site-main">
             {stage !== 'opened' && (
               <InvitationPrologue stage={stage} onOpen={handleOpen} />
             )}
@@ -79,14 +81,8 @@ export function WeddingExperience() {
             <ConvidadosMural />
             <GuestbookWall />
           </main>
+          <PhotographerFooter />
           <MusicPlayer ref={musicRef} visible={stage === 'opened'} />
-          <footer className="site-footer">
-            <a href="#preparacao" data-magnetic aria-label="Reviver a história desde o início">
-              Reviver a história <span aria-hidden="true">↑</span>
-            </a>
-            <span>MARINA & THIAGO · 2025</span>
-            <span>HORIZONTE EM MOVIMENTO</span>
-          </footer>
         </MotionConfig>
       </LazyMotion>
     </MagneticCursor>

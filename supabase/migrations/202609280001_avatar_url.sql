@@ -60,8 +60,8 @@ begin
   return to_jsonb(v_result);
 end; $$;
 
-revoke all on function public.submit_guestbook_message(uuid, text, text, text, text, text) from public, anon, authenticated;
-grant execute on function public.submit_guestbook_message(uuid, text, text, text, text, text) to service_role;
+revoke all on function public.submit_guestbook_message(uuid, text, text, text, text, text) from public;
+grant execute on function public.submit_guestbook_message(uuid, text, text, text, text, text) to anon, authenticated, service_role;
 
 -- 3. Ensure photographer and wedding exist without duplicates
 insert into public.photographers(id, name)

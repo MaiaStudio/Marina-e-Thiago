@@ -423,18 +423,12 @@ export default function GuestbookWall() {
                         {error}
                       </p>
                     )}
-                    {mode === 'unavailable' && (
-                      <p className="form-status">
-                        O mural está sendo preparado. Volte em breve para deixar sua lembrança.
-                      </p>
-                    )}
 
                     <button
                       className="form-submit"
                       type="submit"
                       disabled={
                         submitting ||
-                        mode === 'unavailable' ||
                         (!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !token)
                       }
                     >

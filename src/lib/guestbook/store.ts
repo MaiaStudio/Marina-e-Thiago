@@ -7,10 +7,16 @@ import { RATE_LIMIT, RATE_WINDOW_MS, publicMessage, type GuestMessage, type Mess
 export class RateLimitError extends Error {}
 export class NotConfiguredError extends Error {}
 
-export const getSupabaseUrl = () => process.env.SUPABASE_URL;
+export const getSupabaseUrl = () =>
+  process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
 
 export const getSupabaseKey = () =>
-  process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
+  process.env.SUPABASE_SECRET_KEY ||
+  process.env.SUPABASE_SERVICE_ROLE_KEY ||
+  process.env.SUPABASE_SERVICE_KEY ||
+  process.env.SUPABASE_KEY ||
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+  process.env.SUPABASE_ANON_KEY;
 
 const localPath = () => path.resolve(/* turbopackIgnore: true */ process.env.GUESTBOOK_LOCAL_PATH || '.data/guestbook.json');
 

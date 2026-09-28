@@ -20,18 +20,17 @@ const localPath = () => path.resolve(/* turbopackIgnore: true */ process.env.GUE
 
 export function storageMode(): 'supabase' | 'local' | 'unavailable' {
   const hasUrl = !!getSupabaseUrl();
-  const hasSecretKey = !!process.env.SUPABASE_SECRET_KEY;
-  const hasServiceRoleKey = !!process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const hasKey = !!getSupabaseKey();
 
-  if (hasUrl && (hasSecretKey || hasServiceRoleKey)) {
+  if (hasUrl && hasKey) {
     return 'supabase';
   }
 
   if (process.env.NODE_ENV === 'production' || process.env.VERCEL) {
     console.warn('[GUESTBOOK] Production configuration unavailable', {
       hasSupabaseUrl: hasUrl,
-      hasSupabaseSecretKey: hasSecretKey,
-      hasServiceRoleKey: hasServiceRoleKey,
+      hasSupabaseSecretKey: !!(process.env.SUPABASE_SECRET_KEY || process.env.marinathiago_SUPABASE_SECRET_KEY),
+      hasServiceRoleKey: !!(process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.marinathiago_SUPABASE_SERVICE_ROLE_KEY),
       environment: process.env.NODE_ENV || 'production',
     });
     return 'unavailable';

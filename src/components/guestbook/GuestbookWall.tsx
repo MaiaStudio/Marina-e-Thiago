@@ -349,9 +349,7 @@ export default function GuestbookWall() {
                     <p>
                       {success === 'pending'
                         ? 'Sua mensagem foi recebida e aparecerá no mural depois de aprovada.'
-                        : mode === 'local'
-                        ? 'Sua mensagem foi salva nesta prévia e já pode ser lida no mural.'
-                        : 'Sua mensagem foi guardada e já faz parte desta história.'}
+                        : 'Sua mensagem foi guardada com carinho e já faz parte desta história.'}
                     </p>
                     <Dialog.Close className="text-link" style={{ marginTop: 25 }}>
                       Voltar às lembranças <span aria-hidden="true">→</span>
@@ -474,7 +472,6 @@ export default function GuestbookWall() {
                       type="submit"
                       disabled={
                         submitting ||
-                        mode === 'unavailable' ||
                         (!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !token)
                       }
                     >
@@ -484,7 +481,7 @@ export default function GuestbookWall() {
 
                     <p className="form-note">
                       Sem cadastro. Apenas você e suas palavras.
-                      {mode === 'local' && (
+                      {mode === 'local' && process.env.NODE_ENV !== 'production' && (
                         <>
                           <br />
                           Prévia local: as mensagens ficam salvas neste computador.

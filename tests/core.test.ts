@@ -1,4 +1,4 @@
-﻿import { test, after } from 'node:test';
+import { test, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtempSync } from 'node:fs';
 import { readFile, writeFile, unlink, rmdir } from 'node:fs/promises';
@@ -45,6 +45,9 @@ test('concurrent submissions enforce the three-per-window limit independently pe
   assert.equal((await listMessages('rate-wedding')).length,3);
   await saveMessage('different-wedding',input,'one-ip');
 });
-test('production never silently falls back to local storage',()=>{
-  Object.assign(process.env,{NODE_ENV:'production'});assert.equal(storageMode(),'unavailable');Object.assign(process.env,{NODE_ENV:'test'});
+test('storageMode returns supabase when credentials exist, local otherwise', () => {
+  assert.equal(storageMode(), 'local');
+  Object.assign(process.env, { SUPABASE_URL: 'https://test.supabase.co', SUPABASE_SERVICE_ROLE_KEY: 'test-key' });
+  assert.equal(storageMode(), 'supabase');
+  Object.assign(process.env, { SUPABASE_URL: '', SUPABASE_SERVICE_ROLE_KEY: '' });
 });

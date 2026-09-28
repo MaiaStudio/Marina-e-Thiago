@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { m } from "motion/react";
+import { m, useReducedMotion } from "motion/react";
 
 export interface TestimonialItem {
   text: string;
@@ -14,6 +14,8 @@ export const TestimonialsColumn = (props: {
   testimonials: TestimonialItem[];
   duration?: number;
 }) => {
+  const reduced = useReducedMotion();
+
   if (!props.testimonials || props.testimonials.length === 0) {
     return null;
   }
@@ -21,10 +23,10 @@ export const TestimonialsColumn = (props: {
   return (
     <div className={props.className}>
       <m.div
-        animate={{
+        animate={reduced ? undefined : {
           translateY: "-50%",
         }}
-        transition={{
+        transition={reduced ? undefined : {
           duration: props.duration || 15,
           repeat: Infinity,
           ease: "linear",

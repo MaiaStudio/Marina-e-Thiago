@@ -28,6 +28,14 @@ const magazineImages = convidadosList.map((src, index) => ({
 export function ConvidadosMural() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const updateSize = () => setIsMobile(window.innerWidth < 768);
+    updateSize();
+    window.addEventListener('resize', updateSize);
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
 
   const prevPhoto = () => {
     setLightboxIndex(i => (i - 1 + convidadosList.length) % convidadosList.length);
@@ -65,8 +73,8 @@ export function ConvidadosMural() {
           images={magazineImages}
           background="transparent"
           pages={53}
-          pageWidth={640}
-          pageHeight={480}
+          pageWidth={isMobile ? 360 : 640}
+          pageHeight={isMobile ? 300 : 480}
           spacing={4.4}
           tilt={0}
           turn={0}

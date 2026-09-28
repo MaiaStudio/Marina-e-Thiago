@@ -79,7 +79,7 @@ export function WeddingExperience() {
             <ConvidadosMural />
             <GuestbookWall />
           </main>
-          <MusicPlayer ref={musicRef} />
+          <MusicPlayer ref={musicRef} visible={stage === 'opened'} />
           <footer className="site-footer">
             <a href="#preparacao" data-magnetic aria-label="Reviver a história desde o início">
               Reviver a história <span aria-hidden="true">↑</span>

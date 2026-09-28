@@ -12,7 +12,11 @@ export interface MusicPlayerHandle {
 
 const AUDIO_SRC = mediaUrl('/media/' + encodeURIComponent('Armandinho - Starfix - Casinha [CyRhsFa_LbA].mp3'));
 
-export const MusicPlayer = forwardRef<MusicPlayerHandle>(function MusicPlayer(_props, ref) {
+export interface MusicPlayerProps {
+  visible?: boolean;
+}
+
+export const MusicPlayer = forwardRef<MusicPlayerHandle, MusicPlayerProps>(function MusicPlayer({ visible = true }, ref) {
   const [playing, setPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -79,11 +83,13 @@ export const MusicPlayer = forwardRef<MusicPlayerHandle>(function MusicPlayer(_p
       />
       <button
         type="button"
-        className="music-toggle-btn"
+        className={`music-toggle-btn ${!visible ? 'music-btn-hidden' : ''}`}
         data-magnetic
         onClick={toggle}
         aria-label={playing ? 'Desativar som' : 'Ativar som'}
         title={playing ? 'Desativar som' : 'Ativar som'}
+        tabIndex={visible ? 0 : -1}
+        aria-hidden={!visible}
       >
         <div className="wave-container" aria-hidden="true">
           {playing ? (

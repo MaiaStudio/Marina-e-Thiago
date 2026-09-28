@@ -155,18 +155,23 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
   }
 
-  const connStr =
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
+  const rawConnStr =
     process.env.marinathiago_POSTGRES_URL ||
     process.env.POSTGRES_URL ||
     process.env.marinathiago_POSTGRES_URL_NON_POOLING ||
     process.env.marinathiago_POSTGRES_PRISMA_URL;
 
-  if (!connStr) {
+  if (!rawConnStr) {
     return NextResponse.json({ error: 'No connection string available' }, { status: 500 });
   }
 
+  const connUrl = new URL(rawConnStr);
+  connUrl.searchParams.delete('sslmode');
+
   const pool = new Pool({
-    connectionString: connStr,
+    connectionString: connUrl.toString(),
     ssl: { rejectUnauthorized: false },
     connectionTimeoutMillis: 10000,
   });

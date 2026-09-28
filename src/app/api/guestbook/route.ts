@@ -2,21 +2,14 @@ import { createHmac } from 'node:crypto';
 import { NextRequest, NextResponse } from 'next/server';
 import { weddingId } from '@/lib/manifest';
 import { messageSchema } from '@/lib/guestbook/validation';
-import { listMessages, saveMessage, storageMode, NotConfiguredError, RateLimitError, getSupabaseUrl } from '@/lib/guestbook/store';
+import { listMessages, saveMessage, storageMode, NotConfiguredError, RateLimitError, getSupabaseUrl, getSupabaseKey } from '@/lib/guestbook/store';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 function attachDiagnosticHeaders(response: NextResponse) {
-  const envKeys = Object.keys(process.env).filter(k => k.toLowerCase().includes('supabase') || k.toLowerCase().includes('guestbook') || k.toLowerCase().includes('rate'));
-  response.headers.set('x-guestbook-matched-keys', envKeys.join(','));
-  response.headers.set('x-guestbook-has-url', String(!!(process.env.SUPABASE_URL || process.env.marinathiago_SUPABASE_URL)));
-  response.headers.set('x-guestbook-has-secret-key', String(!!(process.env.SUPABASE_SECRET_KEY || process.env.marinathiago_SUPABASE_SECRET_KEY)));
-  response.headers.set('x-guestbook-has-service-role-key', String(!!(process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.marinathiago_SUPABASE_SERVICE_ROLE_KEY)));
-  response.headers.set('x-guestbook-raw-url', String(!!process.env.SUPABASE_URL));
-  response.headers.set('x-guestbook-pref-url', String(!!process.env.marinathiago_SUPABASE_URL));
-  response.headers.set('x-guestbook-raw-role', String(!!process.env.SUPABASE_SERVICE_ROLE_KEY));
-  response.headers.set('x-guestbook-pref-role', String(!!process.env.marinathiago_SUPABASE_SERVICE_ROLE_KEY));
+  response.headers.set('x-guestbook-has-url', String(!!getSupabaseUrl()));
+  response.headers.set('x-guestbook-has-secret-key', String(!!getSupabaseKey()));
   return response;
 }
 

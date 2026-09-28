@@ -2,10 +2,21 @@ import { createHmac } from 'node:crypto';
 import { NextRequest, NextResponse } from 'next/server';
 import { weddingId } from '@/lib/manifest';
 import { messageSchema } from '@/lib/guestbook/validation';
-import { listMessages, saveMessage, storageMode, NotConfiguredError, RateLimitError } from '@/lib/guestbook/store';
+import { listMessages, saveMessage, storageMode, NotConfiguredError, RateLimitError, getSupabaseUrl } from '@/lib/guestbook/store';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
+
+function attachDiagnosticHeaders(response: NextResponse) {
+  response.headers.set('x-guestbook-has-url', String(!!getSupabaseUrl()));
+  response.headers.set('x-guestbook-has-secret-key', String(!!process.env.SUPABASE_SECRET_KEY));
+  response.headers.set('x-guestbook-has-service-role-key', String(!!process.env.SUPABASE_SERVICE_ROLE_KEY));
+  response.headers.set('x-guestbook-has-site-url', String(!!process.env.NEXT_PUBLIC_SITE_URL));
+  response.headers.set('x-guestbook-has-rate-limit-secret', String(!!process.env.RATE_LIMIT_SECRET));
+  response.headers.set('x-guestbook-has-turnstile-site-key', String(!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY));
+  response.headers.set('x-guestbook-has-turnstile-secret-key', String(!!process.env.TURNSTILE_SECRET_KEY));
+  return response;
+}
 
 function json(body: unknown, status = 200) {
   return NextResponse.json(body, { status, headers: { 'Cache-Control': 'no-store' } });
@@ -20,16 +31,19 @@ function failure(error: unknown) {
   }
   if (error instanceof NotConfiguredError) {
     console.warn('[GUESTBOOK] Supabase not configured');
-    return json({ error: 'O mural está sendo preparado. Volte em breve para deixar sua lembrança.' }, 503);
+    return attachDiagnosticHeaders(json({ error: 'O mural está sendo preparado. Volte em breve para deixar sua lembrança.' }, 503));
   }
   console.error('[GUESTBOOK] Operation failed:', error instanceof Error ? error.message : error);
   return json({ error: 'Não foi possível salvar agora. Sua mensagem continua no formulário. Tente novamente.' }, 503);
 }
 
 export async function GET(request: NextRequest) {
-  if (storageMode() === 'unavailable') {
-    console.warn('[GUESTBOOK] Supabase not configured in GET');
-    return json({ messages: [], mode: 'unavailable', hasMore: false });
+  const mode = storageMode();
+  if (mode === 'unavailable') {
+    return attachDiagnosticHeaders(json({ messages: [], mode: 'unavailable', hasMore: false }));
+  }
+  if (mode === 'supabase') {
+    console.log('[GUESTBOOK] Storage mode: supabase');
   }
   const before = request.nextUrl.searchParams.get('before') || undefined;
   if (before && (!/^\d{4}-\d{2}-\d{2}T/.test(before) || !Number.isFinite(Date.parse(before)))) {
@@ -37,7 +51,7 @@ export async function GET(request: NextRequest) {
   }
   try {
     const messages = await listMessages(weddingId, before);
-    return json({ messages, mode: storageMode(), hasMore: messages.length === 12 });
+    return attachDiagnosticHeaders(json({ messages, mode, hasMore: messages.length === 12 }));
   } catch (error) {
     return failure(error);
   }

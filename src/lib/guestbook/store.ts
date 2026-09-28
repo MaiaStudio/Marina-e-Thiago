@@ -7,22 +7,32 @@ import { RATE_LIMIT, RATE_WINDOW_MS, publicMessage, type GuestMessage, type Mess
 export class RateLimitError extends Error {}
 export class NotConfiguredError extends Error {}
 
-export const getSupabaseUrl = () =>
-  process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+export const getSupabaseUrl = () => process.env.SUPABASE_URL;
 
 export const getSupabaseKey = () =>
-  process.env.SUPABASE_SECRET_KEY ||
-  process.env.SUPABASE_SERVICE_ROLE_KEY ||
-  process.env.SUPABASE_SERVICE_KEY ||
-  process.env.SUPABASE_KEY ||
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-  process.env.SUPABASE_ANON_KEY;
+  process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 const localPath = () => path.resolve(/* turbopackIgnore: true */ process.env.GUESTBOOK_LOCAL_PATH || '.data/guestbook.json');
 
 export function storageMode(): 'supabase' | 'local' | 'unavailable' {
-  if (getSupabaseUrl() && getSupabaseKey()) return 'supabase';
-  if (process.env.NODE_ENV === 'production' || process.env.VERCEL) return 'unavailable';
+  const hasUrl = !!getSupabaseUrl();
+  const hasSecretKey = !!process.env.SUPABASE_SECRET_KEY;
+  const hasServiceRoleKey = !!process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+  if (hasUrl && (hasSecretKey || hasServiceRoleKey)) {
+    return 'supabase';
+  }
+
+  if (process.env.NODE_ENV === 'production' || process.env.VERCEL) {
+    console.warn('[GUESTBOOK] Production configuration unavailable', {
+      hasSupabaseUrl: hasUrl,
+      hasSupabaseSecretKey: hasSecretKey,
+      hasServiceRoleKey: hasServiceRoleKey,
+      environment: process.env.NODE_ENV || 'production',
+    });
+    return 'unavailable';
+  }
+
   return 'local';
 }
 

@@ -8,13 +8,15 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 function attachDiagnosticHeaders(response: NextResponse) {
-  response.headers.set('x-guestbook-has-url', String(!!getSupabaseUrl()));
-  response.headers.set('x-guestbook-has-secret-key', String(!!process.env.SUPABASE_SECRET_KEY));
-  response.headers.set('x-guestbook-has-service-role-key', String(!!process.env.SUPABASE_SERVICE_ROLE_KEY));
-  response.headers.set('x-guestbook-has-site-url', String(!!process.env.NEXT_PUBLIC_SITE_URL));
-  response.headers.set('x-guestbook-has-rate-limit-secret', String(!!process.env.RATE_LIMIT_SECRET));
-  response.headers.set('x-guestbook-has-turnstile-site-key', String(!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY));
-  response.headers.set('x-guestbook-has-turnstile-secret-key', String(!!process.env.TURNSTILE_SECRET_KEY));
+  const envKeys = Object.keys(process.env).filter(k => k.toLowerCase().includes('supabase') || k.toLowerCase().includes('guestbook') || k.toLowerCase().includes('rate'));
+  response.headers.set('x-guestbook-matched-keys', envKeys.join(','));
+  response.headers.set('x-guestbook-has-url', String(!!(process.env.SUPABASE_URL || process.env.marinathiago_SUPABASE_URL)));
+  response.headers.set('x-guestbook-has-secret-key', String(!!(process.env.SUPABASE_SECRET_KEY || process.env.marinathiago_SUPABASE_SECRET_KEY)));
+  response.headers.set('x-guestbook-has-service-role-key', String(!!(process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.marinathiago_SUPABASE_SERVICE_ROLE_KEY)));
+  response.headers.set('x-guestbook-raw-url', String(!!process.env.SUPABASE_URL));
+  response.headers.set('x-guestbook-pref-url', String(!!process.env.marinathiago_SUPABASE_URL));
+  response.headers.set('x-guestbook-raw-role', String(!!process.env.SUPABASE_SERVICE_ROLE_KEY));
+  response.headers.set('x-guestbook-pref-role', String(!!process.env.marinathiago_SUPABASE_SERVICE_ROLE_KEY));
   return response;
 }
 

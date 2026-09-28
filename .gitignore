@@ -19,3 +19,6 @@ test-results/
 .cache/
 *.log
 .originkit/
+
+.vercel
+.env*

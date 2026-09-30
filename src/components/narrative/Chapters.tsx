@@ -227,22 +227,100 @@ export function HeroExpansion() {
   const textOpacity = useRange(scrollYProgress, [.45, .7], [0, 1]);
   return <ChapterLoader><section id="sim" className="the-yes chapter" aria-label="Capítulo 5: O sim"><div ref={ref} className="hero-scene"><div className="hero-sticky"><m.div className="hero-expanding-image" style={{ scale: reduced ? 1 : scale }}><PhotoImage photo={narrative('sim')[0]} sizes="100vw" /></m.div><m.div className="yes-title" style={{ opacity: reduced ? 1 : textOpacity }}><h2>Sim<span>.</span></h2></m.div></div></div><div className="yes-after"><DriftingPhoto photo={narrative('sim')[1]} className="yes-second" amount={12} /></div><Discover id="sim" /></section></ChapterLoader>;
 }
-function FinalDissolve({ photo, before }: { photo: Photo; before: Photo }) {
+function FinalScene({ photo }: { photo: Photo }) {
   const ref = useRef<HTMLDivElement>(null);
   const reduced = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end end'] });
-  const beforeY = useRange(scrollYProgress, [0, .4, .8], ['0vh', '-25vh', '-55vh'], gentle);
-  const beforeOpacity = useRange(scrollYProgress, [.1, .6], [1, 0]);
   const scale = useRange(scrollYProgress, [0, .5, 1], [.82, .92, 1], gentle);
-  const titleOpacity = useRange(scrollYProgress, [.5, .9], [0, 1]);
-  return <div id="memoria" ref={ref} className="final-scene chapter" aria-label="Capítulo 7: Nossos passos"><div className="final-sticky"><m.div className="final-photo" style={{ scale: reduced ? 1 : scale }}><PhotoImage photo={photo} sizes="(min-width: 900px) 50vw, 67svh" /></m.div><m.div className="dissolve-remnant" style={{ y: reduced ? 0 : beforeY, opacity: reduced ? 0 : beforeOpacity }}><PhotoImage photo={before} /></m.div><m.div className="final-type" style={{ opacity: reduced ? 1 : titleOpacity }}><h2>Daqui<br /><em>em diante.</em></h2></m.div></div></div>;
+  const titleOpacity = useRange(scrollYProgress, [.05, .6], [0, 0.9], gentle);
+  const titleY = useRange(scrollYProgress, [.05, .6], [20, 0], gentle);
+  return (
+    <div id="memoria" ref={ref} className="final-scene chapter" aria-label="Capítulo 7: Nossos passos">
+      <div className="final-sticky">
+        <m.div className="final-photo" style={{ scale: reduced ? 1 : scale }}>
+          <PhotoImage photo={photo} sizes="(min-width: 900px) 50vw, 67svh" />
+        </m.div>
+        <m.div
+          className="final-type"
+          style={{
+            opacity: reduced ? 0.9 : titleOpacity,
+            y: reduced ? 0 : titleY,
+          }}
+        >
+          <h2>Daqui<br /><em>em diante.</em></h2>
+        </m.div>
+      </div>
+    </div>
+  );
 }
 export function KineticPartyGallery() {
   const photos = narrative('festa');
   const strip = useRef<HTMLDivElement>(null);
   const [dragging, setDragging] = useState(false);
   const drag = useRef({ start: 0, scroll: 0 });
-  return <ChapterLoader><section id="festa" className="party chapter" aria-label="Capítulo 6: A celebração"><div className="release-pair"><DriftingPhoto photo={photos[0]} className="release-first" amount={32} /><DriftingPhoto photo={photos[1]} className="release-second" amount={55} /></div><div className="party-title-wrap"><ChapterTitle id="festa">E a noite<br />é <em>nossa.</em></ChapterTitle></div><div className="party-intro"><div className="party-toast"><PhotoImage photo={photos[3]} sizes="(min-width: 900px) 80vw, 100vw" /></div></div><div className="party-duet"><DriftingPhoto photo={photos[4]} className="party-glasses" amount={22} /><DriftingPhoto photo={photos[5]} className="party-embrace" amount={44} /></div><div ref={strip} className={`friends-strip ${dragging ? 'is-dragging' : ''}`} tabIndex={0} role="region" aria-label="Fotografias com os convidados. Deslize para os lados." onPointerDown={e => { if (e.pointerType !== 'mouse' || !strip.current) return; drag.current = { start: e.clientX, scroll: strip.current.scrollLeft }; setDragging(true); e.currentTarget.setPointerCapture(e.pointerId); }} onPointerMove={e => { if (dragging && strip.current) strip.current.scrollLeft = drag.current.scroll - (e.clientX - drag.current.start); }} onPointerUp={() => setDragging(false)} onPointerCancel={() => setDragging(false)} onKeyDown={e => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); strip.current?.scrollBy({ left: (e.key === 'ArrowRight' ? 1 : -1) * 280, behavior: 'smooth' }); } }}>{photos.slice(6, 10).map(photo => <figure key={photo.id} className="friend-frame"><PhotoImage photo={photo} sizes="(min-width: 900px) 45vw, 85vw" /></figure>)}</div><div className="party-peak"><DriftingPhoto photo={photos[10]} className="peak-one" amount={24} /><DriftingPhoto photo={photos[11]} className="peak-two" amount={46} /></div><Discover id="festa" /><FinalDissolve before={photos[12]} photo={narrative('memoria')[0]} /><div className="epilogue"><p>Marina <em>&</em> Thiago</p><Discover id="memoria" /></div></section></ChapterLoader>;
+  return (
+    <ChapterLoader>
+      <section id="festa" className="party chapter" aria-label="Capítulo 6: A celebração">
+        <div className="release-pair">
+          <DriftingPhoto photo={photos[0]} className="release-first" amount={32} />
+          <DriftingPhoto photo={photos[1]} className="release-second" amount={55} />
+        </div>
+        <div className="party-title-wrap">
+          <ChapterTitle id="festa">E a noite<br />é <em>nossa.</em></ChapterTitle>
+        </div>
+        <div className="party-intro">
+          <div className="party-toast">
+            <PhotoImage photo={photos[3]} sizes="(min-width: 900px) 80vw, 100vw" />
+          </div>
+        </div>
+        <div className="party-duet">
+          <DriftingPhoto photo={photos[4]} className="party-glasses" amount={22} />
+          <DriftingPhoto photo={photos[5]} className="party-embrace" amount={44} />
+        </div>
+        <div
+          ref={strip}
+          className={`friends-strip ${dragging ? 'is-dragging' : ''}`}
+          tabIndex={0}
+          role="region"
+          aria-label="Fotografias com os convidados. Deslize para os lados."
+          onPointerDown={e => {
+            if (e.pointerType !== 'mouse' || !strip.current) return;
+            drag.current = { start: e.clientX, scroll: strip.current.scrollLeft };
+            setDragging(true);
+            e.currentTarget.setPointerCapture(e.pointerId);
+          }}
+          onPointerMove={e => {
+            if (dragging && strip.current) strip.current.scrollLeft = drag.current.scroll - (e.clientX - drag.current.start);
+          }}
+          onPointerUp={() => setDragging(false)}
+          onPointerCancel={() => setDragging(false)}
+          onKeyDown={e => {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+              e.preventDefault();
+              strip.current?.scrollBy({ left: (e.key === 'ArrowRight' ? 1 : -1) * 280, behavior: 'smooth' });
+            }
+          }}
+        >
+          {photos.slice(6, 10).map(photo => (
+            <figure key={photo.id} className="friend-frame">
+              <PhotoImage photo={photo} sizes="(min-width: 900px) 45vw, 85vw" />
+            </figure>
+          ))}
+        </div>
+        <div className="party-peak">
+          <DriftingPhoto photo={photos[10]} className="peak-one" amount={24} />
+          <DriftingPhoto photo={photos[11]} className="peak-two" amount={46} />
+          <DriftingPhoto photo={photos[12]} className="peak-three" amount={32} />
+        </div>
+        <Discover id="festa" />
+      </section>
+      <FinalScene photo={narrative('memoria')[0]} />
+      <div className="epilogue">
+        <p>Marina <em>&</em> Thiago</p>
+        <Discover id="memoria" />
+      </div>
+    </ChapterLoader>
+  );
 }
 
 

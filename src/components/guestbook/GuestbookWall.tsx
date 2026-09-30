@@ -475,15 +475,13 @@ export default function GuestbookWall() {
             >
               <TestimonialsColumn
                 testimonials={firstColumn}
-                speed={26}
-                initialDirection={1}
+                duration={22}
                 className="w-full sm:w-[280px]"
               />
               {secondColumn.length > 0 && (
                 <TestimonialsColumn
                   testimonials={secondColumn}
-                  speed={20}
-                  initialDirection={1}
+                  duration={28}
                   className="hidden sm:block w-full sm:w-[280px]"
                 />
               )}

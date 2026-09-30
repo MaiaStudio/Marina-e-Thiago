@@ -162,16 +162,16 @@ main { position:relative; overflow-x:clip; }
 .party-peak { display:grid; grid-template-columns:repeat(12,1fr); padding:80px 5vw 0; }
 .peak-one { grid-column:1/12; grid-row:1; }
 .peak-two { grid-column:3/13; grid-row:2; margin-top:25px; }
+.peak-three { grid-column:2/11; grid-row:3; margin-top:35px; }
 .party > .chapter-discovery { padding-bottom:70px; }
-.final-scene { height:185svh; position:relative; background:var(--night); }
-.final-sticky { position:sticky; top:0; height:100svh; overflow:hidden; }
-.final-photo { position:absolute; inset:0; }
+.final-scene { height:185svh; position:relative; background:var(--night); color:var(--light); }
+.final-sticky { position:sticky; top:0; height:100svh; overflow:hidden; touch-action:pan-y; }
+.final-photo { position:absolute; inset:0; pointer-events:none; }
 .final-photo .photo { height:100%; aspect-ratio:auto!important; }
 .final-photo .photo img { object-position:50% 58%!important; }
-.dissolve-remnant { position:absolute; width:40vw; left:4vw; top:3svh; z-index:2; transform:rotate(-4deg); box-shadow:0 8px 30px #0003; }
-.final-type { position:absolute; top:9svh; left:7.2vw; z-index:3; }
-.final-type h2 { font-family:var(--font-editorial),serif; font-size:clamp(58px,16vw,110px); font-weight:350; line-height:.95; letter-spacing:-.05em; margin-top:25px; }
-.epilogue { padding:10svh 24px 2svh; text-align:center; }
+.final-type { position:absolute; top:9svh; left:7.2vw; z-index:3; pointer-events:none; color:var(--light); }
+.final-type h2 { font-family:var(--font-editorial),serif; font-size:clamp(58px,16vw,110px); font-weight:350; line-height:.95; letter-spacing:-.05em; margin-top:25px; color:var(--light); }
+.epilogue { padding:10svh 24px 2svh; text-align:center; background:var(--night); color:var(--light); }
 .epilogue > p { font-family:var(--font-editorial),serif; font-size:39px; font-weight:350; letter-spacing:-.04em; margin-bottom:18px; }
 .epilogue .chapter-discovery { padding-top:35px; padding-bottom:70px; }
 .convidados-section { position:relative; padding:110px 0 70px; background:var(--paper); border-top:1px solid var(--line); overflow:hidden; }
@@ -202,21 +202,6 @@ main { position:relative; overflow-x:clip; }
 .guestbook-count-note { font-size:10px; color:var(--muted); letter-spacing:.08em; text-transform:uppercase; margin-top:20px; }
 .guestbook-showcase { width:100%; display:flex; justify-content:center; }
 .guestbook-columns-wrapper { display:flex; justify-content:center; gap:20px; width:100%; max-height:580px; overflow:hidden; }
-.guestbook-scroll-column {
-  overflow-y:auto;
-  overflow-x:hidden;
-  max-height:580px;
-  height:580px;
-  -webkit-overflow-scrolling:touch;
-  touch-action:pan-y;
-  overscroll-behavior-y:auto;
-  scrollbar-width:thin;
-  scrollbar-color:rgba(143,153,120,0.22) transparent;
-}
-.guestbook-scroll-column::-webkit-scrollbar { width:4px; }
-.guestbook-scroll-column::-webkit-scrollbar-track { background:transparent; }
-.guestbook-scroll-column::-webkit-scrollbar-thumb { background:rgba(143,153,120,0.22); border-radius:9999px; transition:background .2s ease; }
-.guestbook-scroll-column:hover::-webkit-scrollbar-thumb { background:rgba(143,153,120,0.45); }
 .guestbook-empty-state {
   display:flex;
   flex-direction:column;
@@ -384,12 +369,12 @@ main { position:relative; overflow-x:clip; }
  .party-peak { padding:100px 12vw 0; }
  .peak-one { grid-column:1/9; }
  .peak-two { grid-column:5/13; grid-row:1; margin-top:350px; }
+ .peak-three { grid-column:3/8; grid-row:2; margin-top:70px; margin-bottom:40px; }
  .final-photo { width:54vw; max-width:850px; left:auto; right:5vw; }
  .final-photo .photo img { object-fit:contain; }
  .final-photo .photo { background:none!important; }
  .final-type { left:10vw; top:22svh; }
  .final-type h2 { font-size:clamp(85px,8vw,135px); }
- .dissolve-remnant { width:22vw; left:5vw; top:4svh; }
  .epilogue > p { font-size:60px; }
  .guestbook { padding:120px 12vw 100px; }
  .guestbook-intro { font-size:13px; max-width:400px; }
@@ -408,6 +393,7 @@ main { position:relative; overflow-x:clip; }
  .sheet-header h2 { font-size:55px; }
 }
 @media(max-width:767px) {
+ .final-scene { height:120svh; }
  .convidados-section { padding:64px 0 40px; }
  .convidados-header { padding:0 6vw 24px; }
  .convidados-title { font-size:clamp(30px,8vw,46px); }
@@ -452,7 +438,6 @@ main { position:relative; overflow-x:clip; }
  .final-scene { height:100svh; }
  .final-sticky { position:relative; }
  .final-photo { transform:none!important; }
- .dissolve-remnant { display:none; }
  .final-type { opacity:1!important; }
  .story-progress { display:none; }
 }

@@ -28,13 +28,32 @@ const magazineImages = convidadosList.map((src, index) => ({
 export function ConvidadosMural() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => (typeof window !== 'undefined' ? window.innerWidth < 768 : false));
 
   useEffect(() => {
     const updateSize = () => setIsMobile(window.innerWidth < 768);
-    updateSize();
     window.addEventListener('resize', updateSize);
     return () => window.removeEventListener('resize', updateSize);
+  }, []);
+
+  useEffect(() => {
+    const section = document.getElementById('convidados');
+    if (!section) return;
+
+    let preloaded = false;
+    const observer = new IntersectionObserver((entries) => {
+      if (!preloaded && entries.some(e => e.isIntersecting)) {
+        preloaded = true;
+        convidadosList.slice(0, 8).forEach(src => {
+          const img = new window.Image();
+          img.src = src;
+        });
+        observer.disconnect();
+      }
+    }, { rootMargin: '1000px 0px 1000px 0px' });
+
+    observer.observe(section);
+    return () => observer.disconnect();
   }, []);
 
   const prevPhoto = () => {

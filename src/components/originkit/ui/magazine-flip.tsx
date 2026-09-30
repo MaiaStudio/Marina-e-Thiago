@@ -18,8 +18,10 @@ const THICKNESS_RATIO = 0.005
 
 const OFFSET_RANGE = 250
 
-const CELL_MAX = 1024
-const ATLAS_MAX = 8192
+const MOBILE_MAX_ATLAS = 2048
+const DESKTOP_MAX_ATLAS = 4096
+const MOBILE_MAX_CELL = 256
+const DESKTOP_MAX_CELL = 512
 
 const PLACEHOLDER_ASPECTS = [
     0.72, 1.5, 0.78, 1.33, 1.0, 1.62, 0.68, 1.2, 0.86, 1.45,
@@ -54,7 +56,7 @@ const DEFAULTS = {
 
 const CORRIDOR_DIM = 0.22
 
-const TAP_SLOP = 6
+const TAP_SLOP = 8
 const TAP_MS = 600
 
 const PICK_MAX = 1600
@@ -97,6 +99,7 @@ export interface MagazineFlipProps {
     scrollSens: number
     travel: Partial<Travel>
     style?: React.CSSProperties
+    onSelect?: (index: number) => void
 }
 
 type Config = {
@@ -110,6 +113,7 @@ type Config = {
     view: View
     scrollSens: number
     travel: Travel
+    onSelect?: (index: number) => void
 }
 
 function clamp(v: number, lo: number, hi: number, fallback: number): number {
@@ -327,26 +331,37 @@ void main() {
 
 interface Cell {
     rect: [number, number, number, number]
-
     aspect: number
 }
 
 interface Atlas {
-    texture: THREE.Texture
+    canvas: HTMLCanvasElement
+    ctx: CanvasRenderingContext2D
+    texture: THREE.CanvasTexture
     cells: Cell[]
+    cols: number
+    rows: number
+    cell: number
+    updateCell: (index: number, img: HTMLImageElement) => void
+    dispose: () => void
 }
 
 const imageCache = new Map<string, HTMLImageElement | null>()
 const imagePending = new Map<string, Promise<HTMLImageElement | null>>()
 
 function loadImage(url: string): Promise<HTMLImageElement | null> {
+    if (!url) return Promise.resolve(null)
     if (imageCache.has(url)) return Promise.resolve(imageCache.get(url) ?? null)
     const pending = imagePending.get(url)
     if (pending) return pending
     const p = new Promise<HTMLImageElement | null>((resolve) => {
         const img = new window.Image()
 
-        img.crossOrigin = "anonymous"
+        if (url.startsWith("http://") || url.startsWith("https://")) {
+            if (typeof window !== "undefined" && !url.startsWith(window.location.origin)) {
+                img.crossOrigin = "anonymous"
+            }
+        }
         img.onload = () => {
             imageCache.set(url, img)
             resolve(img)
@@ -388,70 +403,88 @@ function drawPlaceholder(
     ctx.fillText(String(index + 1).padStart(2, "0"), x + w / 2, y + h / 2)
 }
 
-async function buildAtlas(
-    sources: string[],
+function createAtlas(
+    n: number,
+    maxTextureDim: number,
+    cellMax: number,
     maxAnisotropy: number
-): Promise<Atlas | null> {
-    const n = Math.max(1, sources.length)
-    const images = await Promise.all(
-        sources.map((src) => (src ? loadImage(src) : Promise.resolve(null)))
-    )
+): Atlas | null {
+    const total = Math.max(1, n)
+    const cols = Math.ceil(Math.sqrt(total))
+    const rows = Math.ceil(total / cols)
+    const cell = Math.max(64, Math.min(cellMax, Math.floor(maxTextureDim / Math.max(cols, rows))))
 
-    const cols = Math.ceil(Math.sqrt(n))
-    const rows = Math.ceil(n / cols)
-    const cell = Math.min(CELL_MAX, Math.floor(ATLAS_MAX / Math.max(cols, rows)))
     const canvas = document.createElement("canvas")
     canvas.width = cols * cell
     canvas.height = rows * cell
     const ctx = canvas.getContext("2d")
     if (!ctx) return null
 
-    const paint = (useImages: boolean): Cell[] => {
-        ctx.clearRect(0, 0, canvas.width, canvas.height)
-        const cells: Cell[] = []
-        for (let i = 0; i < n; i++) {
-            const cx = (i % cols) * cell
-            const cy = Math.floor(i / cols) * cell
-            const img = useImages ? images[i] : null
-            const aspect =
-                img && img.naturalHeight > 0
-                    ? img.naturalWidth / img.naturalHeight
-                    : PLACEHOLDER_ASPECTS[i % PLACEHOLDER_ASPECTS.length]
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    const cells: Cell[] = []
 
-            const w = aspect >= 1 ? cell : cell * aspect
-            const h = aspect >= 1 ? cell / aspect : cell
-            const dx = cx + (cell - w) / 2
-            const dy = cy + (cell - h) / 2
-            if (img) ctx.drawImage(img, dx, dy, w, h)
-            else drawPlaceholder(ctx, i, dx, dy, w, h)
+    for (let i = 0; i < total; i++) {
+        const cx = (i % cols) * cell
+        const cy = Math.floor(i / cols) * cell
+        const aspect = PLACEHOLDER_ASPECTS[i % PLACEHOLDER_ASPECTS.length]
+        const w = aspect >= 1 ? cell : cell * aspect
+        const h = aspect >= 1 ? cell / aspect : cell
+        const dx = cx + (cell - w) / 2
+        const dy = cy + (cell - h) / 2
 
-            const u0 = (dx + 1) / canvas.width
-            const u1 = (dx + w - 1) / canvas.width
-            const vTop = 1 - (dy + 1) / canvas.height
-            const vBottom = 1 - (dy + h - 1) / canvas.height
-            cells.push({ rect: [u0, vBottom, u1, vTop], aspect })
-        }
-        return cells
-    }
+        drawPlaceholder(ctx, i, dx, dy, w, h)
 
-    let cells = paint(true)
-    try {
-        ctx.getImageData(0, 0, 1, 1)
-    } catch {
-        cells = paint(false)
+        const u0 = (dx + 1) / canvas.width
+        const u1 = (dx + w - 1) / canvas.width
+        const vTop = 1 - (dy + 1) / canvas.height
+        const vBottom = 1 - (dy + h - 1) / canvas.height
+        cells.push({ rect: [u0, vBottom, u1, vTop], aspect })
     }
 
     const texture = new THREE.CanvasTexture(canvas)
-
     texture.colorSpace = THREE.NoColorSpace
     texture.generateMipmaps = true
     texture.minFilter = THREE.LinearMipmapLinearFilter
     texture.magFilter = THREE.LinearFilter
     texture.wrapS = texture.wrapT = THREE.ClampToEdgeWrapping
-
     texture.anisotropy = maxAnisotropy
     texture.needsUpdate = true
-    return { texture, cells }
+
+    const updateCell = (index: number, img: HTMLImageElement) => {
+        if (index < 0 || index >= total) return
+        const cx = (index % cols) * cell
+        const cy = Math.floor(index / cols) * cell
+        const aspect =
+            img.naturalHeight > 0
+                ? img.naturalWidth / img.naturalHeight
+                : PLACEHOLDER_ASPECTS[index % PLACEHOLDER_ASPECTS.length]
+        const w = aspect >= 1 ? cell : cell * aspect
+        const h = aspect >= 1 ? cell / aspect : cell
+        const dx = cx + (cell - w) / 2
+        const dy = cy + (cell - h) / 2
+
+        ctx.clearRect(cx, cy, cell, cell)
+        try {
+            ctx.drawImage(img, dx, dy, w, h)
+        } catch {
+            drawPlaceholder(ctx, index, dx, dy, w, h)
+            return
+        }
+
+        const u0 = (dx + 1) / canvas.width
+        const u1 = (dx + w - 1) / canvas.width
+        const vTop = 1 - (dy + 1) / canvas.height
+        const vBottom = 1 - (dy + h - 1) / canvas.height
+        cells[index] = { rect: [u0, vBottom, u1, vTop], aspect }
+    }
+
+    const dispose = () => {
+        texture.dispose()
+        canvas.width = 1
+        canvas.height = 1
+    }
+
+    return { canvas, ctx, texture, cells, cols, rows, cell, updateCell, dispose }
 }
 
 function blankTexture(): THREE.DataTexture {
@@ -494,7 +527,7 @@ class MagazineScene {
     private offsetAttr: THREE.InstancedBufferAttribute
 
     private scroll = { target: 0, current: 0, speed: 0 }
-    private drag = { active: false, lastX: 0, id: -1 }
+    private drag = { active: false, lastX: 0, lastY: 0, id: -1 }
 
     private focus = { index: -1, t: 0, target: 0 }
 
@@ -516,6 +549,23 @@ class MagazineScene {
         canvas.style.cssText =
             "position:absolute;inset:0;width:100%;height:100%;display:block"
         container.appendChild(canvas)
+
+        canvas.addEventListener(
+            "webglcontextlost",
+            (event) => {
+                event.preventDefault()
+                this.pause()
+            },
+            false
+        )
+        canvas.addEventListener(
+            "webglcontextrestored",
+            () => {
+                this.loadAtlas()
+                this.start()
+            },
+            false
+        )
 
         this.camera = new THREE.PerspectiveCamera(CAM_FOV, 1, 0.1, 200)
         this.camera.position.z = CAM_Z
@@ -666,24 +716,124 @@ class MagazineScene {
         const sources = this.sourceList()
         const key = sources.join("|")
 
-        if (key === this.atlasKey) return
+        if (key === this.atlasKey && this.atlas) return
         this.atlasKey = key
         const token = ++this.atlasToken
-        buildAtlas(sources, this.renderer.capabilities.getMaxAnisotropy())
-            .then((atlas) => {
-                if (this.disposed || token !== this.atlasToken) {
-                    atlas?.texture.dispose()
-                    return
+
+        if (this.atlas) {
+            this.atlas.dispose()
+            this.atlas = null
+        }
+
+        const isMobile =
+            typeof window !== "undefined" &&
+            (window.innerWidth < 768 || navigator.maxTouchPoints > 0)
+        const hwMax = this.renderer.capabilities.maxTextureSize || 4096
+        const maxTextureDim = Math.min(
+            hwMax,
+            isMobile ? MOBILE_MAX_ATLAS : DESKTOP_MAX_ATLAS
+        )
+        const cellMax = isMobile ? MOBILE_MAX_CELL : DESKTOP_MAX_CELL
+        const maxAnisotropy = this.renderer.capabilities.getMaxAnisotropy()
+
+        const atlas = createAtlas(
+            sources.length,
+            maxTextureDim,
+            cellMax,
+            maxAnisotropy
+        )
+        if (!atlas) return
+
+        this.atlas = atlas
+        this.material.uniforms.uAtlas.value = atlas.texture
+        this.writeCells()
+        this.onAtlasReady?.()
+
+        // Phase 1: Load initial batch of photos
+        const initialBatchSize = Math.min(8, sources.length)
+        const initialSources = sources.slice(0, initialBatchSize)
+
+        Promise.all(
+            initialSources.map((src, i) =>
+                src
+                    ? loadImage(src).then((img) => ({ i, img }))
+                    : Promise.resolve({ i, img: null })
+            )
+        ).then((results) => {
+            if (this.disposed || token !== this.atlasToken || !this.atlas) return
+            let changed = false
+            for (const { i, img } of results) {
+                if (img) {
+                    this.atlas.updateCell(i, img)
+                    this.writeCell(i)
+                    changed = true
                 }
-                this.atlas?.texture.dispose()
-                this.atlas = atlas
-                if (atlas) {
-                    this.material.uniforms.uAtlas.value = atlas.texture
-                    this.writeCells()
-                }
+            }
+            if (changed) {
+                this.atlas.texture.needsUpdate = true
                 this.onAtlasReady?.()
+            }
+
+            // Phase 2: Progressively load remaining batches during idle time
+            this.loadRemainingBatches(sources, initialBatchSize, token)
+        })
+    }
+
+    private writeCell(index: number) {
+        const cells = this.atlas?.cells
+        if (!cells || !cells.length) return
+        const c = cells[index % cells.length]
+        if (!c) return
+        const count = cells.length
+        for (let i = index; i < MAX_PAGES; i += count) {
+            this.rectAttr.setXYZW(i, c.rect[0], c.rect[1], c.rect[2], c.rect[3])
+            this.aspectAttr.setX(i, c.aspect)
+        }
+        this.rectAttr.needsUpdate = true
+        this.aspectAttr.needsUpdate = true
+    }
+
+    private loadRemainingBatches(
+        sources: string[],
+        startIndex: number,
+        token: number
+    ) {
+        if (startIndex >= sources.length) return
+        const batchSize = 6
+        const nextIndex = Math.min(startIndex + batchSize, sources.length)
+        const slice = sources.slice(startIndex, nextIndex)
+
+        const runBatch = () => {
+            if (this.disposed || token !== this.atlasToken || !this.atlas) return
+            Promise.all(
+                slice.map((src, idx) => {
+                    const globalIdx = startIndex + idx
+                    return src
+                        ? loadImage(src).then((img) => ({ i: globalIdx, img }))
+                        : Promise.resolve({ i: globalIdx, img: null })
+                })
+            ).then((results) => {
+                if (this.disposed || token !== this.atlasToken || !this.atlas) return
+                let changed = false
+                for (const { i, img } of results) {
+                    if (img) {
+                        this.atlas.updateCell(i, img)
+                        this.writeCell(i)
+                        changed = true
+                    }
+                }
+                if (changed) {
+                    this.atlas.texture.needsUpdate = true
+                }
+                this.loadRemainingBatches(sources, nextIndex, token)
             })
-            .catch(() => {})
+        }
+
+        if (typeof window !== "undefined" && "requestIdleCallback" in window) {
+            window.requestIdleCallback(() => runBatch(), { timeout: 150 })
+        } else {
+            setTimeout(runBatch, 40)
+        }
     }
 
     private settings() {
@@ -717,7 +867,6 @@ class MagazineScene {
         this.renderer.readRenderTargetPixels(
             this.pickTarget,
             Math.min(tw - 1, Math.floor(u * tw)),
-
             Math.min(th - 1, Math.floor((1 - v) * th)),
             1,
             1,
@@ -732,6 +881,9 @@ class MagazineScene {
     }
 
     private onTap(hit: number) {
+        if (hit >= 0 && this.cfg.onSelect) {
+            this.cfg.onSelect(hit)
+        }
         if (!this.settings().tapToView) return
         if (this.focus.index >= 0) {
             this.focus.target = 0
@@ -776,24 +928,44 @@ class MagazineScene {
             y: event.clientY,
             at: performance.now(),
             id: event.pointerId,
-
-            hit:
-                this.focus.index < 0 && this.settings().tapToView
-                    ? this.pick(event.clientX, event.clientY)
-                    : -1,
+            hit: -1,
         }
-        this.container.setPointerCapture?.(event.pointerId)
+        if (event.pointerType === "mouse") {
+            this.container.setPointerCapture?.(event.pointerId)
+        }
 
         if (this.focus.index >= 0) return
-        this.drag.active = true
+        this.drag.active = event.pointerType === "mouse"
         this.drag.lastX = event.clientX
+        this.drag.lastY = event.clientY
         this.drag.id = event.pointerId
     }
 
     private onPointerMove = (event: PointerEvent) => {
-        if (!this.drag.active || event.pointerId !== this.drag.id) return
+        if (event.pointerId !== this.drag.id) return
+
+        if (!this.drag.active) {
+            if (event.pointerType === "touch") {
+                const absDx = Math.abs(event.clientX - this.tap.x)
+                const absDy = Math.abs(event.clientY - this.tap.y)
+                if (absDy > absDx && absDy > 8) {
+                    return
+                }
+                if (absDx > absDy && absDx > 8) {
+                    this.drag.active = true
+                    this.drag.lastX = event.clientX
+                    this.drag.lastY = event.clientY
+                } else {
+                    return
+                }
+            } else {
+                this.drag.active = true
+            }
+        }
+
         const delta = this.drag.lastX - event.clientX
         this.drag.lastX = event.clientX
+        this.drag.lastY = event.clientY
 
         const S = this.settings()
         this.push(delta * 2 * S.worldPerPx * S.wheel)
@@ -805,7 +977,9 @@ class MagazineScene {
             this.drag.id = -1
         }
         if (event.pointerId !== this.tap.id) return
-        this.container.releasePointerCapture?.(event.pointerId)
+        if (event.pointerType === "mouse") {
+            this.container.releasePointerCapture?.(event.pointerId)
+        }
         this.tap.id = -1
 
         const moved = Math.hypot(
@@ -813,7 +987,8 @@ class MagazineScene {
             event.clientY - this.tap.y
         )
         if (moved <= TAP_SLOP && performance.now() - this.tap.at <= TAP_MS) {
-            this.onTap(this.tap.hit)
+            const hit = this.pick(this.tap.x, this.tap.y)
+            this.onTap(hit)
         }
     }
 
@@ -823,7 +998,9 @@ class MagazineScene {
             this.drag.id = -1
         }
         if (event.pointerId === this.tap.id) {
-            this.container.releasePointerCapture?.(event.pointerId)
+            if (event.pointerType === "mouse") {
+                this.container.releasePointerCapture?.(event.pointerId)
+            }
             this.tap.id = -1
         }
     }
@@ -886,11 +1063,19 @@ class MagazineScene {
         this.renderer.render(this.scene, this.camera)
     }
 
+    pause() {
+        if (this.frameId) {
+            cancelAnimationFrame(this.frameId)
+            this.frameId = 0
+        }
+    }
+
     start() {
+        if (this.disposed || this.frameId) return
         this.attach()
         this.lastT = performance.now()
         const loop = () => {
-            if (this.disposed) return
+            if (this.disposed || !this.frameId) return
             this.frameId = requestAnimationFrame(loop)
             this.step()
         }
@@ -952,13 +1137,14 @@ class MagazineScene {
     dispose() {
         this.disposed = true
         cancelAnimationFrame(this.frameId)
+        this.frameId = 0
         this.detach()
         this.geometry.dispose()
         this.material.dispose()
         this.pickMaterial.dispose()
         this.pickTarget.dispose()
         this.blank.dispose()
-        this.atlas?.texture.dispose()
+        this.atlas?.dispose()
         this.mesh.dispose()
         this.renderer.dispose()
         const canvas = this.renderer.domElement
@@ -980,6 +1166,7 @@ export default function MagazineFlip(props: Partial<MagazineFlipProps>) {
         scrollSens = DEFAULTS.scrollSens,
         travel,
         style,
+        onSelect,
     } = props
 
     const containerRef = useRef<HTMLDivElement>(null)
@@ -997,6 +1184,7 @@ export default function MagazineFlip(props: Partial<MagazineFlipProps>) {
         view: { ...DEFAULT_VIEW, ...view },
         scrollSens,
         travel: { ...DEFAULT_TRAVEL, ...travel },
+        onSelect,
     }
     cfgRef.current = cfg
 
@@ -1021,7 +1209,22 @@ export default function MagazineFlip(props: Partial<MagazineFlipProps>) {
             scene.setSize(container.clientWidth, container.clientHeight)
         })
         ro.observe(container)
+
+        const io = new IntersectionObserver(
+            (entries) => {
+                const entry = entries[0]
+                if (entry?.isIntersecting) {
+                    scene.start()
+                } else {
+                    scene.pause()
+                }
+            },
+            { rootMargin: "300px" }
+        )
+        io.observe(container)
+
         return () => {
+            io.disconnect()
             ro.disconnect()
             scene.dispose()
             sceneRef.current = null

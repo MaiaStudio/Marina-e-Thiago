@@ -224,7 +224,7 @@ export default function GuestbookWall() {
   };
 
   // Prepare testimonials exclusively from real messages fetched from API / Supabase
-  const { firstColumn, secondColumn } = useMemo(() => {
+  const { firstColumn, secondColumn, allTestimonials } = useMemo(() => {
     const userTestimonials: TestimonialItem[] = messages.map(m => ({
       id: m.id,
       text: m.message,
@@ -239,6 +239,7 @@ export default function GuestbookWall() {
     return {
       firstColumn: col1,
       secondColumn: col2,
+      allTestimonials: userTestimonials,
     };
   }, [messages]);
 
@@ -468,15 +469,23 @@ export default function GuestbookWall() {
           ) : messages.length > 0 ? (
             <div
               className={`guestbook-columns-wrapper ${
-                messages.length > 2
-                  ? "[mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent)]"
+                messages.length > 1
+                  ? "[mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]"
                   : ""
               }`}
             >
+              {/* Mobile View: Single column containing all testimonials */}
+              <TestimonialsColumn
+                testimonials={allTestimonials}
+                duration={24}
+                className="w-full block sm:hidden"
+              />
+
+              {/* Desktop View: Two columns preserving exact desktop layout */}
               <TestimonialsColumn
                 testimonials={firstColumn}
-                duration={22}
-                className="w-full sm:w-[280px]"
+                duration={24}
+                className="hidden sm:block w-full sm:w-[280px]"
               />
               {secondColumn.length > 0 && (
                 <TestimonialsColumn
